@@ -1,0 +1,125 @@
+:root {
+    --primary: #05B050;
+    --secondary: #FB8A2E;
+    --primary-hover: #009440;
+}
+
+.text {
+    color: #009440;
+}
+
+/* --------------------------------- Button --------------------------------- */
+.btn-primary-2 {
+    background-color: white;
+    border: 1px solid var(--primary);
+}
+
+.btn-primary-2:hover {
+    background-color: white;
+    border: 1px solid var(--primary);
+}
+
+/* --------------------------------- SIDEBAR -------------------------------- */
+.sidebar-active {
+    background-color: var(--primary);
+}
+
+.sidebar-active span {
+    color: white;
+}
+
+/* ----------------------------- Cursor pointer ----------------------------- */
+.cursor {
+    cursor: pointer;
+}
+
+/* Buttons area */
+.view {
+    background-color: #FB8A2E;
+    color: #fff;
+    width: 140px;
+}
+
+
+/* Select area */
+.select {
+    height: 300px;
+    width: 95%;
+    border-radius: 2px;
+    background-color: #fff;
+
+}
+
+.up {
+    width: 140px;
+}
+
+.searchMechantInput {
+    width: 85%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #e8e8e8;
+}
+
+.table thead {
+    background-color: rgb(18 19 48);
+    color: white;
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: rgb(238 238 238);
+}
+
+#stateFilterSelect {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #05B050;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* padding-right: 24px; */
+}
+
+select::after {
+    content: “\25b6”;
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Tabs */
+/* Estilos para desktop */
+
+.tabcontent {
+    display: none;
+    padding: 20px;
+    /* position: absolute; */
+    top: 50px;
+}
+
+.tabcontent h3 {
+    margin-top: 0;
+}
+
+/* Estilos para mobile */
+@media screen and (max-width: 600px) {
+
+    .tabcontent {
+        padding: 0 18px;
+        overflow: hidden;
+        background-color: #f1f1f1;
+        display: none;
+        position: initial;
+    }
+}
+
+.tab-active {
+    background-color: rgb(35 43 57);
+    border: none;
+    color: white;
+}
