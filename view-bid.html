@@ -18,7 +18,9 @@
 		<meta name="format-detection" content="telephone=no">
 
 		<!-- PAGE TITLE HERE -->
-		<title>Order Tracking</title>
+		<title>Zowasel User--Dashboard</title>
+		<!-- Vectormap -->
+		<link href="vendor/jqvmap/css/jqvmap.min.css" rel="stylesheet">
 		<!-- FAVICONS ICON -->
 		<link rel="shortcut icon" type="image/png" href="images/favicon.png">
 
@@ -95,7 +97,7 @@
 						<div class="collapse navbar-collapse justify-content-between">
 							<div class="header-left">
 								<div class="dashboard_bar">
-									Order Tracking
+									Product Details
 								</div>
 							</div>
 							<div class="header-right d-flex align-items-center">
@@ -590,253 +592,290 @@
             Content body start
         ***********************************-->
 			<div class="content-body">
-				<!-- row -->
-				<div class="container-fluid">
+				<div class="container-fluid mh-auto">
+
 					<div class="row">
-						<div class="col-xl-12">
-							<div class="row">
-								<!-- Order Tracking -->
-								<div class="col-xl-8">
-									<div class="card">
-										<div class="card-body p-3">
-											<div class=" active-projects">
-												<div class="tbl-caption">
-													<h2 class="heading mb-4"><strong>Order Number: #000000</strong></h2>
+						<!-- product and user details -->
+						<div class="col-xl-3 col-lg-5 col-md-6">
+							<div class="card">
+								<div class="card-body">
+									<div class="card-use-box">
+										<div class="crd-bx-img">
+											<img src="images/profile/friends/f1.jpg" class="rounded-circle" alt="">
+											<div class="active"></div>
+										</div>
+										<div class="card__text">
+											<h4 class="mb-0">Nwachi Eze</h4>
+											<p>demo11@gmail.com</p>
+										</div>
+										<ul class="card__info">
+											<li>
+												<span class="card__info__stats">175</span>
+												<span>products</span>
+											</li>
+											<li>
+												<span class="card__info__stats">50</span>
+												<span>subscribers</span>
+											</li>
 
-													<div class="position-relative">
-														<div class="progress " role="progressbar"
-															aria-label="Success example" aria-valuenow="25"
-															aria-valuemin="0" aria-valuemax="100" style="height: 8px;">
-															<div class="progress-bar bg-green" style="width: 75%">
-															</div>
+										</ul>
+										<ul class="post-pos">
+											<li>
+												<span class="card__info__stats">Status: </span>
+												<span>Verified</span>
+											</li>
+											<li>
+												<span class="card__info__stats">Account Type: </span>
+												<span>Merchant</span>
+											</li>
+										</ul>
+										<div>
+											<a href="javascript:void(0)" class="btn btn-secondary btn-sm ms-2">View
+												Profile</a>
+											<a href="javascript:void(0)"
+												class="btn btn-primary btn-sm me-2">Subscribe</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- product details -->
+						<div class="col-lg-9">
+							<div class="card">
+								<div class="card-body">
+									<div class="row">
+										<div class="col-xl-3 col-lg-6 col-md-6">
+											<!-- Tab panes -->
+											<div class="tab-content" id="myTabContent">
+												<div class="tab-pane fade show active" id="home-tab-pane"
+													role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+													<img class="img-fluid rounded  " src="images/product/1.jpg" alt="">
+												</div>
+												<div class="tab-pane fade" id="profile-tab-pane" role="tabpanel"
+													aria-labelledby="profile-tab" tabindex="0">
+													<img class="img-fluid rounded " src="images/product/2.jpg" alt="">
+												</div>
+												<div class="tab-pane fade" id="contact-tab-pane" role="tabpanel"
+													aria-labelledby="contact-tab" tabindex="0">
+													<img class="img-fluid rounded" src="images/product/3.jpg" alt="">
+												</div>
+												<div class="tab-pane fade" id="end-tab-pane" role="tabpanel"
+													aria-labelledby="end-tab" tabindex="0">
+													<img class="img-fluid rounded" src="images/product/4.jpg" alt="">
+												</div>
 
-														</div>
-														<!-- Circles -->
-														<div class="row">
-															<div class="position-absolute w-25 p-0" style="top: -4px;">
-																<div class="p-2 rounded-circle bg-green"
-																	style="width: 10px;"></div>
-																<h6>Pick Location</h6>
-																<p class="text-muted text-left small">Naziri farms
-																	6 Abeokuta street,
-																	Nassarawa state</p>
-															</div>
-															<div class="position-absolute w-25 p-0"
-																style="top: -4px; left:25%;">
-																<div class="p-2 rounded-circle bg-green"
-																	style="width: 10px;"></div>
-																<h6>Confirmed</h6>
-																<p class="text-muted text-left small">Naziri farms
-																	6 Abeokuta street,
-																	Nassarawa state</p>
-															</div>
-															<div class="position-absolute w-25 p-0"
-																style="top: -4px; left:50%;">
-																<div class="p-2 rounded-circle bg-green"
-																	style="width: 10px;"></div>
-																<h6>Shipped</h6>
-																<p class="text-muted text-left small">Naziri farms
-																	6 Abeokuta street,
-																	Nassarawa state</p>
-															</div>
-															<div class="position-absolute w-25 p-0"
-																style="top: -4px; left:75%;">
-																<div class="p-2 rounded-circle bg-green"
-																	style="width: 10px;"></div>
-																<h6>Delivered</h6>
-																<p class="text-muted text-left small">Naziri farms
-																	6 Abeokuta street,
-																	Nassarawa state</p>
-															</div>
-														</div>
+											</div>
+											<div class="tab-slide-content new-arrival-product mb-4 mb-xl-0">
+												<!-- Nav tabs -->
+												<ul class="nav nav-tabs slide-item-list mt-3" id="myTab" role="tablist">
+													<li class="nav-item" role="presentation">
+														<a href="#first" class="nav-link active" id="home-tab"
+															data-bs-toggle="tab" data-bs-target="#home-tab-pane"
+															role="tab" aria-controls="home-tab-pane"
+															aria-selected="true"><img class="img-fluid me-2 rounded"
+																src="images/tab/1.jpg" alt="" width="80"></a>
+													</li>
+													<li class="nav-item" role="presentation">
+														<a href="#second" class="nav-link" id="profile-tab"
+															data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
+															role="tab" aria-controls="profile-tab-pane"
+															aria-selected="false"><img class="img-fluid me-2 rounded"
+																src="images/tab/2.jpg" alt="" width="80"></a>
+													</li>
+													<li class="nav-item" role="presentation">
+														<a href="#third" class="nav-link" id="contact-tab"
+															data-bs-toggle="tab" data-bs-target="#contact-tab-pane"
+															role="tab" aria-controls="contact-tab-pane"
+															aria-selected="false"><img class="img-fluid me-2 rounded"
+																src="images/tab/3.jpg" alt="" width="80"></a>
+													</li>
+													<li class="nav-item" role="presentation">
+														<a href="#for" class="nav-link" id="end-tab"
+															data-bs-toggle="tab" data-bs-target="#end-tab-pane"
+															role="tab" aria-controls="end-tab-pane"
+															aria-selected="false"><img class="img-fluid  rounded"
+																src="images/tab/4.jpg" alt="" width="80"></a>
+													</li>
 
+												</ul>
+											</div>
+										</div>
+										<!--Tab slider End-->
+										<div class="col-xl-9 col-lg-6 col-md-6 col-sm-12">
+											<div class="product-detail-content">
+												<!--Product details-->
+												<div class="new-arrival-content pr">
+													<h4>Cash Crops</h4>
+
+													<div class="d-table mb-2">
+														<p class="price float-start d-block">NGN325.00/KG</p>
 													</div>
-													<!-- Tracking Details -->
-													<div class="card-header border-0" style="margin-top: 10rem;">
-														<h4 class="heading mb-0">Tracking Details</h4>
-													</div>
-													<div class="card-body p-0">
-														<div class="table-responsive active-projects">
-															<table id="projects-tbl2" class="table">
-																<thead class="bg-white">
-																	<tr>
-																		<th>Date</th>
-																		<th>Location</th>
-																		<th class="text-center">Status</th>
-																	</tr>
-																</thead>
-																<tbody>
-																	<tr>
-																		<td>
-																			<span>24 Apr 2021</span>
+													<p>Availability: <span class="item"> In stock <i
+																class="fa fa-shopping-basket"></i></span>
+													</p>
 
-																		</td>
-																		<td>Abuja</td>
-																		<td class="text-center"><span
-																				class="badge badge-danger light border-0">Ordered</span>
-																		</td>
-																	</tr>
-																	<tr>
-																		<td>
-																			<span>24 Apr 2021</span>
+													<p>Quantity: <span class="item">4</span> </p>
 
-																		</td>
-																		<td>Abuja</td>
-																		<td class="text-center"><span
-																				class="badge badge-danger light border-0">Ordered</span>
-																		</td>
-																	</tr>
-																	<tr>
-																		<td>
-																			<span>24 Apr 2021</span>
-
-																		</td>
-																		<td>Abuja</td>
-																		<td class="text-center"><span
-																				class="badge badge-danger light border-0">Ordered</span>
-																		</td>
-																	</tr>
-
-
-																</tbody>
-															</table>
+													<div class="row">
+														<div class="col-2">
+															<button type="button"
+																class="btn btn-outline-success btn-sm mb-4">subscribe
+																crop</button>
 														</div>
-													</div>
-													<!-- buttons -->
-
-													<div class="w-75 m-auto mt-3">
-														<button type="submit"
-															class="btn btn-green text-white btn-block m-2">Confirm
-															Delivery</button>
-														<p class="text-muted text-center">
-															click the button below If specification differs from
-															delivery,
-															to review price
-														</p>
-														<button type="submit"
-															class="btn btn-danger text-white btn-block">Open Price
-															Reconciliation Dispute</button>
+														<div class=" col">
+															<button type="button"
+																class="btn btn-green btn-sm mb-4">Bid</button>
+														</div>
 													</div>
 												</div>
 											</div>
 										</div>
 									</div>
+
 								</div>
-								<!-- Waybill Details -->
-								<div class="col-xl-4">
-									<div class="card">
-										<div class="card-body pt-4 px-2">
-											<div class="tbl-caption">
-												<div class="w-50 m-auto">
-													<h2 class="heading mb-0 text-center mb-4"><strong>Waybill
-															details</strong></h2>
-													<hr />
-
+							</div>
+						</div>
+						<!-- review -->
+						<div class="modal fade" id="reviewModal">
+							<div class="modal-dialog modal-dialog-center" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title">Negotiation Policy</h5>
+										<button type="button" class="btn-close" data-bs-dismiss="modal">
+										</button>
+									</div>
+									<div class="modal-body">
+										<form>
+											<div class="text-center mb-4">
+												<img class="img-fluid" width="180" src="images/logo/logo-full.png"
+													alt="DexignZone">
+											</div>
+											<div class="mb-3">
+												<div class="rating-widget mb-4 text-center">
+													<!-- Policy -->
+													<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+														dolore in vel. Optio reprehenderit alias harum maxime vero
+														quibusdam, autem voluptate porro dolorum quam, sequi vel
+														laboriosam non voluptatibus quas!</p>
 												</div>
-												<h6>Standard Quality Specification (SQS)</h6>
-												<div class="table-responsive">
-													<table
-														class="table table-bordered verticle-middle table-responsive-sm">
-														<thead class="bg-white ">
-															<tr>
-																<th class="text-dark bg-white ">Parameters</th>
-																<th class="bg-white text-dark">Specifications
-																</th>
+											</div>
 
-															</tr>
-														</thead>
-														<tbody>
-															<tr>
-																<th>Color</th>
-																<td>Red</td>
-															</tr>
-															<tr>
-																<th>Moisture</th>
-																<td>0%</td>
-															</tr>
-															<tr>
-																<th>Foreign Matter (FM)</th>
-																<td>0%</td>
-															</tr>
-															<tr>
-																<th>Broken Grains</th>
-																<td>0%</td>
-															</tr>
-															<tr>
-																<th>Weevil</th>
-																<td>0%</td>
-															</tr>
-															<tr>
-																<th>Damage Kernel</th>
-																<td>0%</td>
-															</tr>
-															<tr>
-																<th>rotten/Shriveled</th>
-																<td>0%</td>
-															</tr>
-															<tr>
-																<th>Test Weight</th>
-																<td>0%</td>
-															</tr>
-															<tr>
-																<th>Hardness</th>
-																<td>0%</td>
-															</tr>
-															<tr>
-																<th>Split</th>
-																<td>0%</td>
-															</tr>
-															<tr>
-																<th>Oil Content</th>
-																<td>0%</td>
-															</tr>
-															<tr>
-																<th>Infestation</th>
-																<td>0%</td>
-															</tr>
-															<tr>
-																<th>Grain Size</th>
-																<td>0%</td>
-															</tr>
-															<tr>
-																<th>Hectoliter Test Weight</th>
-																<td>0%</td>
-															</tr>
-															<tr>
-																<th>Total Defects</th>
-																<td>0%</td>
-															</tr>
-															<tr>
-																<th>Dockage</th>
-																<td>0%</td>
-															</tr>
-															<tr>
-																<th>Ash Content</th>
-																<td>0%</td>
-															</tr>
-															<tr>
-																<th>Acid Insoluble ash</th>
-																<td>0%</td>
-															</tr>
-															<tr>
-																<th>Volatile</th>
-																<td>0%</td>
-															</tr>
-															<tr>
-																<th>Mold % By Weight</th>
-																<td>0%</td>
-															</tr>
-															<tr>
-																<th>Drying Process</th>
-																<td>0%</td>
-															</tr>
-														</tbody>
-													</table>
+											<button type="button" class="btn btn-green btn-block">Accept</button>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- ---------------------- Product Des,specification ---------------------- -->
+					<div class="accordion accordion-primary-solid" id="accordion-two">
+						<div class="accordion-item">
+							<div class="accordion-header  rounded-lg" id="accord-2One" data-bs-toggle="collapse"
+								data-bs-target="#collapse2One" aria-controls="collapse2One" aria-expanded="true"
+								role="button">
+								<span class="accordion-header-text">Description</span>
+								<span class="accordion-header-indicator"></span>
+							</div>
+							<div id="collapse2One" class="collapse accordion__body show" aria-labelledby="accord-2One"
+								data-bs-parent="#accordion-two">
+								<div class="accordion-body-text">
+									Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+									richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
+									brunch. Food truck quinoa nesciunt laborum eiusmod.
+								</div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<div class="accordion-header collapsed rounded-lg" id="accord-2Two"
+								data-bs-toggle="collapse" data-bs-target="#collapse2Two" aria-controls="collapse2Two"
+								aria-expanded="true" role="button">
+								<span class="accordion-header-text">Product Specification</span>
+								<span class="accordion-header-indicator"></span>
+							</div>
+							<div id="collapse2Two" class="collapse accordion__body" aria-labelledby="accord-2Two"
+								data-bs-parent="#accordion-two">
+								<div class="accordion-body-text">
+									<div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+										<div class="col">
+											<h5>Product Categories</h5>
+											<p>Cash Crops</p>
+										</div>
+										<div class="col">
+											<h5>Foreign Matter (FM)</h5>
+											<p>17%</p>
+										</div>
+										<div class="col">
+											<h5>Color</h5>
+											<p>White</p>
+										</div>
+										<div class="col">
+											<h5>Foreign Matter (FM)</h5>
+											<p>17%</p>
+										</div>
+										<div class="col">
+											<h5>Foreign Matter (FM)</h5>
+											<p>17%</p>
+										</div>
+										<div class="col">
+											<h5>Foreign Matter (FM)</h5>
+											<p>17%</p>
+										</div>
+										<div class="col">
+											<h5>Foreign Matter (FM)</h5>
+											<p>17%</p>
+										</div>
+										<div class="col">
+											<h5>Foreign Matter (FM)</h5>
+											<p>17%</p>
+										</div>
+										<div class="col">
+											<h5>Foreign Matter (FM)</h5>
+											<p>17%</p>
+										</div>
+										<div class="col">
+											<h5>Foreign Matter (FM)</h5>
+											<p>17%</p>
+										</div>
+										<div class="col">
+											<h5>Foreign Matter (FM)</h5>
+											<p>17%</p>
+										</div>
+										<div class="col">
+											<h5>Foreign Matter (FM)</h5>
+											<p>17%</p>
+										</div>
+										<div class="col">
+											<h5>Foreign Matter (FM)</h5>
+											<p>17%</p>
+										</div>
+										<div class="col">
+											<h5>Foreign Matter (FM)</h5>
+											<p>17%</p>
+										</div>
+									</div>
 
-												</div>
-												<button type="submit"
-													class="btn btn-green text-white btn-block m-2 w-75 m-auto">Download
-													Document</button>
+								</div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<div class="accordion-header collapsed rounded-lg" id="accord-2Three"
+								data-bs-toggle="collapse" data-bs-target="#collapse2Three"
+								aria-controls="collapse2Three" aria-expanded="true" role="button">
+								<span class="accordion-header-text">Location</span>
+								<span class="accordion-header-indicator"></span>
+							</div>
+							<div id="collapse2Three" class="collapse accordion__body" aria-labelledby="accord-2Three"
+								data-bs-parent="#accordion-two">
+								<div class="accordion-body-text">
+									<div class="container-fluid">
+										<!-- row -->
+										<!-- Vectormap -->
+										<div class="card">
+											<div class="card-header">
+												<h4 class="card-title">World Map</h4>
+											</div>
+											<div class="card-body">
+												<div id="world-map"></div>
 											</div>
 										</div>
 									</div>
@@ -848,25 +887,33 @@
 			</div>
 			<!--**********************************
             Content body end
-        ***********************************--
+        ***********************************-->
+
 
 		</div>
 		<!--**********************************
         Main wrapper end
     ***********************************-->
 
-			<!--**********************************
+		<!--**********************************
         Scripts
     ***********************************-->
-			<!-- Required vendors -->
-			<script src="vendor/global/global.min.js"></script>
-			<script src="vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
-			<script src="js/custom.js"></script>
-			<script src="js/deznav-init.js"></script>
-			<script src="js/demo.js"></script>
-			<script src="js/styleSwitcher.js"></script>
-	</body>
+		<!-- Required vendors -->
+		<script src="vendor/global/global.min.js"></script>
 
-	<!-- Mirrored from yashadmin.dexignzone.com/xhtml/empty-page.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 04 Jan 2024 00:08:16 GMT -->
+		<!-- Vectormap -->
+		<script src="vendor/jqvmap/js/jquery.vmap.min.js"></script>
+		<script src="vendor/jqvmap/js/jquery.vmap.world.js"></script>
+		<script src="vendor/jqvmap/js/jquery.vmap.usa.js"></script>
+		<script src="vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+
+		<!-- All init script -->
+		<script src="js/plugins-init/jqvmap-init.js"></script>
+
+		<script src="js/custom.js"></script>
+		<script src="js/deznav-init.js"></script>
+		<script src="js/demo.js"></script>
+		<script src="js/styleSwitcher.js"></script>
+	</body>
 
 </html>
