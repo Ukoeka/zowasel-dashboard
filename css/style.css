@@ -3253,20 +3253,21 @@ fieldset:disabled .btn {
 
 .btn-secondary {
   --bs-btn-color: #000;
-  --bs-btn-bg: #f8b940;
-  --bs-btn-border-color: #f8b940;
+  --bs-btn-bg: #ed8030;
+  --bs-btn-border-color: #ed8030;
   --bs-btn-hover-color: #000;
-  --bs-btn-hover-bg: #f9c45d;
-  --bs-btn-hover-border-color: #f9c053;
-  --bs-btn-focus-shadow-rgb: 211, 157, 54;
+  --bs-btn-hover-bg: #f09b55;
+  --bs-btn-hover-border-color: #f08f4b;
+  --bs-btn-focus-shadow-rgb: 237, 128, 48;
   --bs-btn-active-color: #000;
-  --bs-btn-active-bg: #f9c766;
-  --bs-btn-active-border-color: #f9c053;
+  --bs-btn-active-bg: #f1a56e;
+  --bs-btn-active-border-color: #f08f4b;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #000;
-  --bs-btn-disabled-bg: #f8b940;
-  --bs-btn-disabled-border-color: #f8b940;
+  --bs-btn-disabled-bg: #ed8030;
+  --bs-btn-disabled-border-color: #ed8030;
 }
+
 
 .btn-success {
   --bs-btn-color: #000;
@@ -3405,21 +3406,22 @@ fieldset:disabled .btn {
 }
 
 .btn-outline-success {
-  --bs-btn-color: #3a9b94;
-  --bs-btn-border-color: #3a9b94;
+  --bs-btn-color: #008d40;
+  --bs-btn-border-color: #008d40;
   --bs-btn-hover-color: #000;
-  --bs-btn-hover-bg: #3a9b94;
-  --bs-btn-hover-border-color: #3a9b94;
-  --bs-btn-focus-shadow-rgb: 58, 155, 148;
+  --bs-btn-hover-bg: #008d40;
+  --bs-btn-hover-border-color: #008d40;
+  --bs-btn-focus-shadow-rgb: 0, 141, 64;
   --bs-btn-active-color: #000;
-  --bs-btn-active-bg: #3a9b94;
-  --bs-btn-active-border-color: #3a9b94;
+  --bs-btn-active-bg: #008d40;
+  --bs-btn-active-border-color: #008d40;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #3a9b94;
+  --bs-btn-disabled-color: #008d40;
   --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: #3a9b94;
+  --bs-btn-disabled-border-color: #008d40;
   --bs-gradient: none;
 }
+
 
 .btn-outline-info {
   --bs-btn-color: #58bad7;
@@ -20610,6 +20612,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
   transition: all 0.5s ease-in-out;
   border-radius: 0.625rem;
   z-index: 9999;
+  display: none;
 }
 .sidebar-right .bg-label-pattern {
   background: transparent;
@@ -38191,51 +38194,49 @@ table {
   border-bottom-left-radius: 0.625rem;
   border-bottom-right-radius: 0.625rem;
 }
-
 .accordion-danger .accordion-header {
-  background: #ff5e5e;
-  border-color: #ff5e5e;
+  background: #ed8030;
+  border-color: #ed8030;
   color: #fff;
-  box-shadow: 0 0.9375rem 1.25rem 0 rgba(255, 94, 94, 0.15);
+  box-shadow: 0 0.9375rem 1.25rem 0 rgba(237, 128, 48, 0.15);
 }
 .accordion-danger .accordion-header.collapsed {
-  background: #ffdede;
-  border-color: #ffdede;
+  background: #ffd8bd;
+  border-color: #ffd8bd;
   color: #211c37;
   box-shadow: none;
 }
 
 .accordion-danger-solid .accordion-header {
-  background: #ff5e5e;
-  border-color: #ff5e5e;
+  background: #ed8030;
+  border-color: #ed8030;
   color: #fff;
-  box-shadow: 0 -0.625rem 1.25rem 0 rgba(255, 94, 94, 0.15);
+  box-shadow: 0 -0.625rem 1.25rem 0 rgba(237, 128, 48, 0.15);
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
 }
 .accordion-danger-solid .accordion-header.collapsed {
-  background: #ffdede;
-  border-color: #ffdede;
+  background: #ffd8bd;
+  border-color: #ffd8bd;
   color: #211c37;
   box-shadow: none;
   border-bottom-left-radius: 0.625rem;
   border-bottom-right-radius: 0.625rem;
 }
-[data-theme-version="dark"]
-  .accordion-danger-solid
-  .accordion-header.collapsed {
-  background: rgba(255, 94, 94, 0.15);
-  border-color: rgba(255, 94, 94, 0.15);
+[data-theme-version="dark"] .accordion-danger-solid .accordion-header.collapsed {
+  background: rgba(237, 128, 48, 0.15);
+  border-color: rgba(237, 128, 48, 0.15);
   color: #888888;
 }
 
 .accordion-danger-solid .accordion__body {
-  border: 0.125rem solid #ff5e5e;
+  border: 0.125rem solid #ed8030;
   border-top: none;
-  box-shadow: 0 0.9375rem 1.25rem 0 rgba(255, 94, 94, 0.15);
+  box-shadow: 0 0.9375rem 1.25rem 0 rgba(237, 128, 48, 0.15);
   border-bottom-left-radius: 0.625rem;
   border-bottom-right-radius: 0.625rem;
 }
+
 
 .accordion-item {
   margin-bottom: 1.25rem;
