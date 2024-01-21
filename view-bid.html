@@ -2,23 +2,25 @@
 <html lang="en">
 
 	<head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="keywords"
-            content="sustainable value chains, agriculture, technology, data science, productivity, sustainability, profitability, one-stop-shop platform, farmers, cooperatives, manufacturers, processors, startups, financial institutions, supply chains, digital Marketplace, trade protection, transparency, trust">
-        <meta name="author" content="Zowasel">
-        <meta name="robots" content="index, follow">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description"
-            content="Zowasel leverages technology and data science to build sustainable value chains across communities, people, and the planet. Our one-stop-shop platform connects farmers, cooperatives, manufacturers, processors, startups, and financial institutions, enhancing productivity, sustainability, and profitability in the agricultural value chain. Join our digital Marketplace for unprecedented access, insights, trade protection, and value. Build multi-year, season-long relationships based on transparency and trust.">
-        <meta property="og:title" content="Zowasel - Building Sustainable Agricultural Value Chains">
-        <meta property="og:description"
-            content="Zowasel leverages technology and data science to build sustainable value chains across communities, people, and the planet. Join our digital Marketplace for unprecedented access, insights, trade protection, and value.">
-        <!-- <meta property="og:image" content="https://your-image-url.com/your-image.png"> -->
-        <meta name="format-detection" content="telephone=no">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="keywords"
+			content="sustainable value chains, agriculture, technology, data science, productivity, sustainability, profitability, one-stop-shop platform, farmers, cooperatives, manufacturers, processors, startups, financial institutions, supply chains, digital Marketplace, trade protection, transparency, trust">
+		<meta name="author" content="Zowasel">
+		<meta name="robots" content="index, follow">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description"
+			content="Zowasel leverages technology and data science to build sustainable value chains across communities, people, and the planet. Our one-stop-shop platform connects farmers, cooperatives, manufacturers, processors, startups, and financial institutions, enhancing productivity, sustainability, and profitability in the agricultural value chain. Join our digital Marketplace for unprecedented access, insights, trade protection, and value. Build multi-year, season-long relationships based on transparency and trust.">
+		<meta property="og:title" content="Zowasel - Building Sustainable Agricultural Value Chains">
+		<meta property="og:description"
+			content="Zowasel leverages technology and data science to build sustainable value chains across communities, people, and the planet. Join our digital Marketplace for unprecedented access, insights, trade protection, and value.">
+		<!-- <meta property="og:image" content="https://your-image-url.com/your-image.png"> -->
+		<meta name="format-detection" content="telephone=no">
 
 		<!-- PAGE TITLE HERE -->
 		<title>Zowasel User--Dashboard</title>
+		<!-- Vectormap -->
+		<link href="vendor/jqvmap/css/jqvmap.min.css" rel="stylesheet">
 		<!-- FAVICONS ICON -->
 		<link rel="shortcut icon" type="image/png" href="images/favicon.png">
 
@@ -45,10 +47,10 @@
         Preloader start
     ********************-->
 		<div id="preloader">
-		<div>
-			<img src="images/pre.gif" alt=""> 
+			<div>
+				<img src="images/pre.gif" alt="">
+			</div>
 		</div>
-    </div>
 		<!--*******************
         Preloader end
     ********************-->
@@ -95,7 +97,7 @@
 						<div class="collapse navbar-collapse justify-content-between">
 							<div class="header-left">
 								<div class="dashboard_bar">
-									Dashboard
+									Product Details
 								</div>
 							</div>
 							<div class="header-right d-flex align-items-center">
@@ -299,7 +301,8 @@
 													</li>
 												</ul>
 											</div>
-											<a class="all-notification" href="all-notification.html">See all notifications
+											<a class="all-notification" href="all-notification.html">See all
+												notifications
 												<i class="ti-arrow-end"></i></a>
 									<li class="nav-item ps-3">
 										<div class="dropdown header-profile2">
@@ -452,12 +455,10 @@
 								</a>
 								<ul aria-expanded="false">
 
-									<li><a href="crop-wanted-listing.html">Crops Wanted</a></li>
+									<li><a href="./crop-wanted.html">Crops Wanted</a></li>
 									<li><a href="crop-auction-listing.html">Crop For Auction</a></li>
-									<li><a href="crop-sales-listing.html">Crops For Sale</a></li>
-									<li><a href="mycrops-auction-sales.html">My Crops(Cooperate view)</a></li>
-									<li><a href="mycrops-wanted.html">My Crops(Merchant view)</a></li>
-									<li><a href="my-sales.html">My Sales</a></li>
+									<li><a href="./products.html">Crops For Sale</a></li>
+									<li><a href="./sales.html">My Sales</a></li>
 									<li><a href="./order.html">My Orders</a></li>
 								</ul>
 							</li>
@@ -591,453 +592,302 @@
             Content body start
         ***********************************-->
 			<div class="content-body">
-				<div class="container-fluid">
-					<!-- welcome Address   -->
-					<div class="mb-5 row align-items-center">
-						<div class="col-md-9">
-							<h3 class="">Welcome, <span>User</span></h3>
-						</div>
-						<!-- select region to view stats  -->
-						<!-- <div class="col-md-3">
-						<label for="">Select Region</label>
-						<select name="" id="" class="form-control form-control-select">
-							<option value="">Global</option>
-							<option value="">Kenya</option>
-							<option value="">Nigeria</option>
-							<option value="">Tanzania</option>
-						</select>
-					</div> -->
-					</div>
-					<!-- Card Stats  -->
+				<div class="container-fluid mh-auto">
+
 					<div class="row">
-						<div class="col-xl-12 col-xxl-12">
-							<div class="row">
-								<div class="col-xl-12">
+						<!-- product and user details -->
+						<div class="col-xl-3 col-lg-5 col-md-6">
+							<div class="card">
+								<div class="card-body">
+									<div class="card-use-box">
+										<div class="crd-bx-img">
+											<img src="images/profile/friends/f1.jpg" class="rounded-circle" alt="">
+											<div class="active"></div>
+										</div>
+										<div class="card__text">
+											<h4 class="mb-0">Nwachi Eze</h4>
+											<p>demo11@gmail.com</p>
+										</div>
+										<ul class="card__info">
+											<li>
+												<span class="card__info__stats">175</span>
+												<span>products</span>
+											</li>
+											<li>
+												<span class="card__info__stats">50</span>
+												<span>subscribers</span>
+											</li>
+
+										</ul>
+										<ul class="post-pos">
+											<li>
+												<span class="card__info__stats">Status: </span>
+												<span>Verified</span>
+											</li>
+											<li>
+												<span class="card__info__stats">Account Type: </span>
+												<span>Merchant</span>
+											</li>
+										</ul>
+										<div>
+											<a href="javascript:void(0)" class="btn btn-secondary btn-sm ms-2">View
+												Profile</a>
+											<a href="javascript:void(0)"
+												class="btn btn-primary btn-sm me-2">Subscribe</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- product details -->
+						<div class="col-lg-9">
+							<div class="card">
+								<div class="card-body">
 									<div class="row">
-										<!-- Cards Statistic Begins Here  -->
-										<div class="col-xl-12">
-											<div class="row row-cols-lg-4 row-cols-md-2 row-cols-sm-1">
-												<!-- Total Crops  -->
-												<div class="col cursor">
-													<div class="card">
-														<div class="card-body depostit-card">
-															<div
-																class="depostit-card-media d-flex justify-content-between style-1">
-																<div>
-																	<h6>Total Crops sold</h6>
-																	<h3 class="mt-3">0</h3>
-																</div>
-																<div class="icon-box bg-info">
-																	<svg xmlns="http://www.w3.org/2000/svg"
-																		class="icon icon-tabler icon-tabler-seeding"
-																		width="32" height="32" viewBox="0 0 24 24"
-																		stroke-width="1.5" stroke="#ffffff" fill="none"
-																		stroke-linecap="round" stroke-linejoin="round">
-																		<path stroke="none" d="M0 0h24v24H0z"
-																			fill="none" />
-																		<path
-																			d="M12 10a6 6 0 0 0 -6 -6h-3v2a6 6 0 0 0 6 6h3" />
-																		<path
-																			d="M12 14a6 6 0 0 1 6 -6h3v1a6 6 0 0 1 -6 6h-3" />
-																		<path d="M12 20l0 -10" />
-																	</svg>
-																</div>
-															</div>
-
-														</div>
-													</div>
+										<div class="col-xl-3 col-lg-6 col-md-6">
+											<!-- Tab panes -->
+											<div class="tab-content" id="myTabContent">
+												<div class="tab-pane fade show active" id="home-tab-pane"
+													role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+													<img class="img-fluid rounded  " src="images/product/1.jpg" alt="">
 												</div>
-												<!-- Total Sales  -->
-												<div class="col cursor">
-													<div class="card">
-														<div class="card-body depostit-card">
-															<div
-																class="depostit-card-media d-flex justify-content-between style-1">
-																<div>
-																	<h6>Total Crops Bought</h6>
-																	<h3 class="mt-3">0</h3>
-																</div>
-																<div class="icon-box bg-primary">
-																	<svg xmlns="http://www.w3.org/2000/svg"
-																		class="icon icon-tabler icon-tabler-building-store"
-																		width="32" height="32" viewBox="0 0 24 24"
-																		stroke-width="1.5" stroke="#ffffff" fill="none"
-																		stroke-linecap="round" stroke-linejoin="round">
-																		<path stroke="none" d="M0 0h24v24H0z"
-																			fill="none" />
-																		<path d="M3 21l18 0" />
-																		<path
-																			d="M3 7v1a3 3 0 0 0 6 0v-1m0 1a3 3 0 0 0 6 0v-1m0 1a3 3 0 0 0 6 0v-1h-18l2 -4h14l2 4" />
-																		<path d="M5 21l0 -10.15" />
-																		<path d="M19 21l0 -10.15" />
-																		<path
-																			d="M9 21v-4a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v4" />
-																	</svg>
-																</div>
-															</div>
-
-														</div>
-													</div>
+												<div class="tab-pane fade" id="profile-tab-pane" role="tabpanel"
+													aria-labelledby="profile-tab" tabindex="0">
+													<img class="img-fluid rounded " src="images/product/2.jpg" alt="">
 												</div>
-												<!-- Total Wallet  -->
-												<div class="col cursor">
-													<div class="card same-card">
-														<div class="card-body depostit-card p-0">
-															<div
-																class="depostit-card-media d-flex justify-content-between pb-0">
-																<div>
-																	<h6>Total Income</h6>
-																	<h3 class="mt-3">NGN</h3>
-																</div>
-																<div class="icon-box bg-purple">
-																	<svg xmlns="http://www.w3.org/2000/svg"
-																		class="icon icon-tabler icon-tabler-wallet"
-																		width="32" height="32" viewBox="0 0 24 24"
-																		stroke-width="1.5" stroke="#ffffff" fill="none"
-																		stroke-linecap="round" stroke-linejoin="round">
-																		<path stroke="none" d="M0 0h24v24H0z"
-																			fill="none" />
-																		<path
-																			d="M17 8v-3a1 1 0 0 0 -1 -1h-10a2 2 0 0 0 0 4h12a1 1 0 0 1 1 1v3m0 4v3a1 1 0 0 1 -1 1h-12a2 2 0 0 1 -2 -2v-12" />
-																		<path d="M20 12v4h-4a2 2 0 0 1 0 -4h4" />
-																	</svg>
-																</div>
-															</div>
-
-														</div>
-													</div>
+												<div class="tab-pane fade" id="contact-tab-pane" role="tabpanel"
+													aria-labelledby="contact-tab" tabindex="0">
+													<img class="img-fluid rounded" src="images/product/3.jpg" alt="">
 												</div>
-												<!-- Total Regions  -->
-												<div class="col cursor">
-													<div class="card">
-														<div class="card-body depostit-card">
-															<div
-																class="depostit-card-media d-flex justify-content-between style-1">
-																<div>
-																	<h6>Total Expenses</h6>
-																	<h3 class="mt-3">0</h3>
-																</div>
-																<div class="icon-box bg-secondary">
-																	<svg xmlns="http://www.w3.org/2000/svg"
-																		class="icon icon-tabler icon-tabler-world"
-																		width="32" height="32" viewBox="0 0 24 24"
-																		stroke-width="1.5" stroke="#ffffff" fill="none"
-																		stroke-linecap="round" stroke-linejoin="round">
-																		<path stroke="none" d="M0 0h24v24H0z"
-																			fill="none" />
-																		<path
-																			d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" />
-																		<path d="M3.6 9h16.8" />
-																		<path d="M3.6 15h16.8" />
-																		<path d="M11.5 3a17 17 0 0 0 0 18" />
-																		<path d="M12.5 3a17 17 0 0 1 0 18" />
-																	</svg>
-																</div>
-															</div>
+												<div class="tab-pane fade" id="end-tab-pane" role="tabpanel"
+													aria-labelledby="end-tab" tabindex="0">
+													<img class="img-fluid rounded" src="images/product/4.jpg" alt="">
+												</div>
 
+											</div>
+											<div class="tab-slide-content new-arrival-product mb-4 mb-xl-0">
+												<!-- Nav tabs -->
+												<ul class="nav nav-tabs slide-item-list mt-3" id="myTab" role="tablist">
+													<li class="nav-item" role="presentation">
+														<a href="#first" class="nav-link active" id="home-tab"
+															data-bs-toggle="tab" data-bs-target="#home-tab-pane"
+															role="tab" aria-controls="home-tab-pane"
+															aria-selected="true"><img class="img-fluid me-2 rounded"
+																src="images/tab/1.jpg" alt="" width="80"></a>
+													</li>
+													<li class="nav-item" role="presentation">
+														<a href="#second" class="nav-link" id="profile-tab"
+															data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
+															role="tab" aria-controls="profile-tab-pane"
+															aria-selected="false"><img class="img-fluid me-2 rounded"
+																src="images/tab/2.jpg" alt="" width="80"></a>
+													</li>
+													<li class="nav-item" role="presentation">
+														<a href="#third" class="nav-link" id="contact-tab"
+															data-bs-toggle="tab" data-bs-target="#contact-tab-pane"
+															role="tab" aria-controls="contact-tab-pane"
+															aria-selected="false"><img class="img-fluid me-2 rounded"
+																src="images/tab/3.jpg" alt="" width="80"></a>
+													</li>
+													<li class="nav-item" role="presentation">
+														<a href="#for" class="nav-link" id="end-tab"
+															data-bs-toggle="tab" data-bs-target="#end-tab-pane"
+															role="tab" aria-controls="end-tab-pane"
+															aria-selected="false"><img class="img-fluid  rounded"
+																src="images/tab/4.jpg" alt="" width="80"></a>
+													</li>
+
+												</ul>
+											</div>
+										</div>
+										<!--Tab slider End-->
+										<div class="col-xl-9 col-lg-6 col-md-6 col-sm-12">
+											<div class="product-detail-content">
+												<!--Product details-->
+												<div class="new-arrival-content pr">
+													<h4>Cash Crops</h4>
+
+													<div class="d-table mb-2">
+														<p class="price float-start d-block">NGN325.00/KG</p>
+													</div>
+													<p>Availability: <span class="item"> In stock <i
+																class="fa fa-shopping-basket"></i></span>
+													</p>
+
+													<p>Quantity: <span class="item">4</span> </p>
+
+													<div class="row">
+														<div class="col-2">
+															<button type="button"
+																class="btn btn-outline-success btn-sm mb-4">subscribe
+																crop</button>
+														</div>
+														<div class=" col">
+															<button type="button"
+																class="btn btn-green btn-sm mb-4">Bid</button>
 														</div>
 													</div>
 												</div>
 											</div>
 										</div>
-										<!-- Seconds Cards Sections  -->
-										<div class="col-xl-12">
-											<div class="row row-cols-lg-4 row-cols-md-2 row-cols-sm-1">
-												<!-- Total Administratoors  -->
-												<!-- <div class="col cursor">
-												<div class="card">
-													<div class="card-body depostit-card">
-														<div class="depostit-card-media d-flex justify-content-between style-1">
-															<div>
-																<h6>Total Administrators</h6>
-																<h3 class="mt-3">0</h3>
-															</div>
-															<div class="icon-box bg-info">
-																<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-square-rounded" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-																	<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-																	<path d="M12 13a3 3 0 1 0 0 -6a3 3 0 0 0 0 6z" />
-																	<path d="M12 3c7.2 0 9 1.8 9 9s-1.8 9 -9 9s-9 -1.8 -9 -9s1.8 -9 9 -9z" />
-																	<path d="M6 20.05v-.05a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v.05" />
-																  </svg>
-															</div>
-														</div>
-														
-													</div>
-												</div>	
-											</div> -->
-												<!-- Total Deliveries  -->
-												<div class="col cursor">
-													<div class="card">
-														<div class="card-body depostit-card">
-															<div
-																class="depostit-card-media d-flex justify-content-between style-1">
-																<div>
-																	<h6>Total Deliveries</h6>
-																	<h3 class="mt-3">0</h3>
-																</div>
-																<div class="icon-box bg-primary">
-																	<svg xmlns="http://www.w3.org/2000/svg"
-																		class="icon icon-tabler icon-tabler-truck"
-																		width="32" height="32" viewBox="0 0 24 24"
-																		stroke-width="1.5" stroke="#ffffff" fill="none"
-																		stroke-linecap="round" stroke-linejoin="round">
-																		<path stroke="none" d="M0 0h24v24H0z"
-																			fill="none" />
-																		<path
-																			d="M7 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
-																		<path
-																			d="M17 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
-																		<path
-																			d="M5 17h-2v-11a1 1 0 0 1 1 -1h9v12m-4 0h6m4 0h2v-6h-8m0 -5h5l3 5" />
-																	</svg>
-																</div>
-															</div>
+									</div>
 
-														</div>
-													</div>
-												</div>
-												<!-- Total Farmer  -->
-												<!-- <div class="col cursor">
-												<div class="card same-card">
-													<div class="card-body depostit-card p-0">
-														<div class="depostit-card-media d-flex justify-content-between pb-0">
-															<div>
-																<h6>Total Farmer</h6>
-																<h3 class="mt-3">0</h3>
-															</div>
-															<div class="icon-box bg-purple">
-																<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-users-group" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-																	<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-																	<path d="M10 13a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
-																	<path d="M8 21v-1a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v1" />
-																	<path d="M15 5a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
-																	<path d="M17 10h2a2 2 0 0 1 2 2v1" />
-																	<path d="M5 5a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
-																	<path d="M3 13v-1a2 2 0 0 1 2 -2h2" />
-																  </svg>
-																
-															</div>
-														</div>
-														
-													</div>
-												</div>
-											</div> -->
-												<!-- Total Users  -->
-												<!-- <div class="col cursor">
-												<div class="card">
-													<div class="card-body depostit-card">
-														<div class="depostit-card-media d-flex justify-content-between style-1">
-															<div>
-																<h6>Total Users</h6>
-																<h3 class="mt-3">0</h3>
-															</div>
-															<div class="icon-box bg-secondary">
-																<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-users" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-																	<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-																	<path d="M9 7m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" />
-																	<path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
-																	<path d="M16 3.13a4 4 0 0 1 0 7.75" />
-																	<path d="M21 21v-2a4 4 0 0 0 -3 -3.85" />
-																  </svg>
-															</div>
-														</div>
-														
-													</div>
-												</div>	
-											</div> -->
+								</div>
+							</div>
+						</div>
+						<!-- review -->
+						<div class="modal fade" id="reviewModal">
+							<div class="modal-dialog modal-dialog-center" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title">Negotiation Policy</h5>
+										<button type="button" class="btn-close" data-bs-dismiss="modal">
+										</button>
+									</div>
+									<div class="modal-body">
+										<form>
+											<div class="text-center mb-4">
+												<img class="img-fluid" width="180" src="images/logo/logo-full.png"
+													alt="DexignZone">
 											</div>
-										</div>
+											<div class="mb-3">
+												<div class="rating-widget mb-4 text-center">
+													<!-- Policy -->
+													<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+														dolore in vel. Optio reprehenderit alias harum maxime vero
+														quibusdam, autem voluptate porro dolorum quam, sequi vel
+														laboriosam non voluptatibus quas!</p>
+												</div>
+											</div>
 
+											<button type="button" class="btn btn-green btn-block">Accept</button>
+										</form>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="row">
-							<!-- Transaction summary table  -->
-							<div class="col-xl-8 col-xxl-8 pe-0">
-								<div class="card">
-									<div class="card-body p-0">
-										<div class="table-responsive active-projects">
-											<div class="tbl-caption d-none">
-												<h4 class="heading mb-0">Recent Transactions</h4>
-											</div>
-											<table id="projects-tbl" class="table">
-												<thead>
-													<tr>
-														<th class="text-white">Transaction ID</th>
-														<th class="text-white">Amount</th>
-														<th class="text-white">Type</th>
-														<th class="text-white">Status</th>
-														<th class="text-white">Date</th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<td>1</td>
-														<td>
-															<div class="d-flex align-items-center">
-
-																<p class="mb-0 ms-2">7,860</p>
-															</div>
-														</td>
-														<td>
-															<div class="d-flex align-items-center">
-																<p class="mb-0 ms-2">order</p>
-															</div>
-														</td>
-														<td class="pe-2">
-															<span
-																class="badge badge-primary light border-0 text-white">Inprogress</span>
-														</td>
-														<td>
-															<span>06 Sep 2021</span>
-														</td>
-
-													</tr>
-													<tr>
-														<td>2</td>
-														<td>
-															<div class="d-flex align-items-center">
-
-																<p class="mb-0 ms-2">9000</p>
-															</div>
-														</td>
-														<td>
-															<div class="d-flex align-items-center">
-
-																<p class="mb-0 ms-2">Order</p>
-															</div>
-														</td>
-
-														<td class="pe-2">
-															<span
-																class="badge badge-danger light border-0">Pending</span>
-														</td>
-														<td>
-															<span>06 Sep 2021</span>
-														</td>
-
-													</tr>
-													<tr>
-														<td>3</td>
-														<td>
-															<div class="d-flex align-items-center">
-
-																<p class="mb-0 ms-2">19,800</p>
-															</div>
-														</td>
-														<td>Order</td>
-														<td class="pe-2">
-															<span
-																class="badge badge-success light border-0">Completed</span>
-														</td>
-														<td>
-															<span>06 Sep 2021</span>
-														</td>
-
-
-
-												</tbody>
-
-											</table>
-										</div>
-									</div>
+					</div>
+					<!-- ---------------------- Product Des,specification ---------------------- -->
+					<div class="accordion accordion-primary-solid" id="accordion-two">
+						<div class="accordion-item">
+							<div class="accordion-header  rounded-lg" id="accord-2One" data-bs-toggle="collapse"
+								data-bs-target="#collapse2One" aria-controls="collapse2One" aria-expanded="true"
+								role="button">
+								<span class="accordion-header-text">Description</span>
+								<span class="accordion-header-indicator"></span>
+							</div>
+							<div id="collapse2One" class="collapse accordion__body show" aria-labelledby="accord-2One"
+								data-bs-parent="#accordion-two">
+								<div class="accordion-body-text">
+									Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+									richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
+									brunch. Food truck quinoa nesciunt laborum eiusmod.
 								</div>
 							</div>
-							<div class="col-xl-4 col-xxl-4">
-								<div class="row row-cols-lg-1 row-cols-md-1 row-cols-sm-1">
-									<!-- Transction Volume  -->
-									<div class="col cursor">
-										<div class="card">
-											<div class="card-body depostit-card">
-												<div class="depostit-card-media d-flex justify-content-between style-1">
-													<div>
-														<h6>Transaction Volume</h6>
-														<h3 class="mt-3">0</h3>
-													</div>
-													<div class="icon-box bg-purple">
-														<svg xmlns="http://www.w3.org/2000/svg"
-															class="icon icon-tabler icon-tabler-transform" width="32"
-															height="32" viewBox="0 0 24 24" stroke-width="1.5"
-															stroke="#ffffff" fill="none" stroke-linecap="round"
-															stroke-linejoin="round">
-															<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-															<path d="M3 6a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
-															<path d="M21 11v-3a2 2 0 0 0 -2 -2h-6l3 3m0 -6l-3 3" />
-															<path d="M3 13v3a2 2 0 0 0 2 2h6l-3 -3m0 6l3 -3" />
-															<path d="M15 18a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
-														</svg>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<!-- Completed Transactions  -->
-									<div class="col cursor">
-										<div class="card">
-											<div class="card-body depostit-card">
-												<div class="depostit-card-media d-flex justify-content-between style-1">
-													<div>
-														<h6>Completed Transactions</h6>
-														<h3 class="mt-3">0</h3>
-													</div>
-													<div class="icon-box bg-primary">
-														<svg xmlns="http://www.w3.org/2000/svg"
-															class="icon icon-tabler icon-tabler-transfer-in" width="32"
-															height="32" viewBox="0 0 24 24" stroke-width="1.5"
-															stroke="#ffffff" fill="none" stroke-linecap="round"
-															stroke-linejoin="round">
-															<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-															<path d="M4 18v3h16v-14l-8 -4l-8 4v3" />
-															<path d="M4 14h9" />
-															<path d="M10 11l3 3l-3 3" />
-														</svg>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<!-- Pending Transactions   -->
-									<div class="col cursor">
-										<div class="card same-card pb-3">
-											<div class="card-body depostit-card p-0">
-												<div class="depostit-card-media d-flex justify-content-between pb-0">
-													<div>
-														<h6>Pending Transaction</h6>
-														<h3 class="mt-3">0</h3>
-													</div>
-													<div class="icon-box bg-secondary">
-														<svg xmlns="http://www.w3.org/2000/svg"
-															class="icon icon-tabler icon-tabler-arrows-transfer-up"
-															width="32" height="32" viewBox="0 0 24 24"
-															stroke-width="1.5" stroke="#ffffff" fill="none"
-															stroke-linecap="round" stroke-linejoin="round">
-															<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-															<path d="M7 21v-6" />
-															<path d="M20 6l-3 -3l-3 3" />
-															<path d="M17 3v18" />
-															<path d="M10 18l-3 3l-3 -3" />
-															<path d="M7 3v2" />
-															<path d="M7 9v2" />
-														</svg>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-
 						</div>
+						<div class="accordion-item">
+							<div class="accordion-header collapsed rounded-lg" id="accord-2Two"
+								data-bs-toggle="collapse" data-bs-target="#collapse2Two" aria-controls="collapse2Two"
+								aria-expanded="true" role="button">
+								<span class="accordion-header-text">Product Specification</span>
+								<span class="accordion-header-indicator"></span>
+							</div>
+							<div id="collapse2Two" class="collapse accordion__body" aria-labelledby="accord-2Two"
+								data-bs-parent="#accordion-two">
+								<div class="accordion-body-text">
+									<div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+										<div class="col">
+											<h5>Product Categories</h5>
+											<p>Cash Crops</p>
+										</div>
+										<div class="col">
+											<h5>Foreign Matter (FM)</h5>
+											<p>17%</p>
+										</div>
+										<div class="col">
+											<h5>Color</h5>
+											<p>White</p>
+										</div>
+										<div class="col">
+											<h5>Foreign Matter (FM)</h5>
+											<p>17%</p>
+										</div>
+										<div class="col">
+											<h5>Foreign Matter (FM)</h5>
+											<p>17%</p>
+										</div>
+										<div class="col">
+											<h5>Foreign Matter (FM)</h5>
+											<p>17%</p>
+										</div>
+										<div class="col">
+											<h5>Foreign Matter (FM)</h5>
+											<p>17%</p>
+										</div>
+										<div class="col">
+											<h5>Foreign Matter (FM)</h5>
+											<p>17%</p>
+										</div>
+										<div class="col">
+											<h5>Foreign Matter (FM)</h5>
+											<p>17%</p>
+										</div>
+										<div class="col">
+											<h5>Foreign Matter (FM)</h5>
+											<p>17%</p>
+										</div>
+										<div class="col">
+											<h5>Foreign Matter (FM)</h5>
+											<p>17%</p>
+										</div>
+										<div class="col">
+											<h5>Foreign Matter (FM)</h5>
+											<p>17%</p>
+										</div>
+										<div class="col">
+											<h5>Foreign Matter (FM)</h5>
+											<p>17%</p>
+										</div>
+										<div class="col">
+											<h5>Foreign Matter (FM)</h5>
+											<p>17%</p>
+										</div>
+									</div>
 
+								</div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<div class="accordion-header collapsed rounded-lg" id="accord-2Three"
+								data-bs-toggle="collapse" data-bs-target="#collapse2Three"
+								aria-controls="collapse2Three" aria-expanded="true" role="button">
+								<span class="accordion-header-text">Location</span>
+								<span class="accordion-header-indicator"></span>
+							</div>
+							<div id="collapse2Three" class="collapse accordion__body" aria-labelledby="accord-2Three"
+								data-bs-parent="#accordion-two">
+								<div class="accordion-body-text">
+									<div class="container-fluid">
+										<!-- row -->
+										<!-- Vectormap -->
+										<div class="card">
+											<div class="card-header">
+												<h4 class="card-title">World Map</h4>
+											</div>
+											<div class="card-body">
+												<div id="world-map"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
-
 			<!--**********************************
             Content body end
         ***********************************-->
-
 
 
 		</div>
@@ -1049,45 +899,21 @@
         Scripts
     ***********************************-->
 		<!-- Required vendors -->
-		<script src="./vendor/global/global.min.js"></script>
-		<script src="./vendor/chart.js/Chart.bundle.min.js"></script>
-		<script src="./vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
-		<script src="./vendor/apexchart/apexchart.js"></script>
-
-		<!-- Dashboard 1 -->
-		<script src="./js/dashboard/dashboard-1.js"></script>
-		<script src="./vendor/draggable/draggable.js"></script>
-		<script src="./vendor/swiper/js/swiper-bundle.min.js"></script>
-
-
-		<!-- tagify -->
-		<script src="./vendor/tagify/dist/tagify.js"></script>
-
-		<script src="./vendor/datatables/js/jquery.dataTables.min.js"></script>
-		<script src="./vendor/datatables/js/dataTables.buttons.min.js"></script>
-		<script src="./vendor/datatables/js/buttons.html5.min.js"></script>
-		<script src="./vendor/datatables/js/jszip.min.js"></script>
-		<script src="./js/plugins-init/datatables.init.js"></script>
-
-		<!-- Apex Chart -->
-
-		<script src="vendor/bootstrap-datetimepicker/js/moment.js"></script>
-		<script src="vendor/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
-
+		<script src="vendor/global/global.min.js"></script>
 
 		<!-- Vectormap -->
-		<script src="./vendor/jqvmap/js/jquery.vmap.min.js"></script>
-		<script src="./vendor/jqvmap/js/jquery.vmap.world.js"></script>
-		<script src="./vendor/jqvmap/js/jquery.vmap.usa.js"></script>
-		<script src="./js/custom.js"></script>
-		<script src="./js/deznav-init.js"></script>
-		<script src="./js/demo.js"></script>
-		<script src="./js/styleSwitcher.js"></script>
-		<script>
-			$('#sideNav').load("./component/sidenav.html");
-		</script>
+		<script src="vendor/jqvmap/js/jquery.vmap.min.js"></script>
+		<script src="vendor/jqvmap/js/jquery.vmap.world.js"></script>
+		<script src="vendor/jqvmap/js/jquery.vmap.usa.js"></script>
+		<script src="vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
 
+		<!-- All init script -->
+		<script src="js/plugins-init/jqvmap-init.js"></script>
 
+		<script src="js/custom.js"></script>
+		<script src="js/deznav-init.js"></script>
+		<script src="js/demo.js"></script>
+		<script src="js/styleSwitcher.js"></script>
 	</body>
 
 </html>

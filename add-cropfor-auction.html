@@ -2,39 +2,31 @@
 <html lang="en">
 
 	<head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="keywords"
-            content="sustainable value chains, agriculture, technology, data science, productivity, sustainability, profitability, one-stop-shop platform, farmers, cooperatives, manufacturers, processors, startups, financial institutions, supply chains, digital Marketplace, trade protection, transparency, trust">
-        <meta name="author" content="Zowasel">
-        <meta name="robots" content="index, follow">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description"
-            content="Zowasel leverages technology and data science to build sustainable value chains across communities, people, and the planet. Our one-stop-shop platform connects farmers, cooperatives, manufacturers, processors, startups, and financial institutions, enhancing productivity, sustainability, and profitability in the agricultural value chain. Join our digital Marketplace for unprecedented access, insights, trade protection, and value. Build multi-year, season-long relationships based on transparency and trust.">
-        <meta property="og:title" content="Zowasel - Building Sustainable Agricultural Value Chains">
-        <meta property="og:description"
-            content="Zowasel leverages technology and data science to build sustainable value chains across communities, people, and the planet. Join our digital Marketplace for unprecedented access, insights, trade protection, and value.">
-        <!-- <meta property="og:image" content="https://your-image-url.com/your-image.png"> -->
-        <meta name="format-detection" content="telephone=no">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="keywords"
+			content="sustainable value chains, agriculture, technology, data science, productivity, sustainability, profitability, one-stop-shop platform, farmers, cooperatives, manufacturers, processors, startups, financial institutions, supply chains, digital Marketplace, trade protection, transparency, trust">
+		<meta name="author" content="Zowasel">
+		<meta name="robots" content="index, follow">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description"
+			content="Zowasel leverages technology and data science to build sustainable value chains across communities, people, and the planet. Our one-stop-shop platform connects farmers, cooperatives, manufacturers, processors, startups, and financial institutions, enhancing productivity, sustainability, and profitability in the agricultural value chain. Join our digital Marketplace for unprecedented access, insights, trade protection, and value. Build multi-year, season-long relationships based on transparency and trust.">
+		<meta property="og:title" content="Zowasel - Building Sustainable Agricultural Value Chains">
+		<meta property="og:description"
+			content="Zowasel leverages technology and data science to build sustainable value chains across communities, people, and the planet. Join our digital Marketplace for unprecedented access, insights, trade protection, and value.">
+		<!-- <meta property="og:image" content="https://your-image-url.com/your-image.png"> -->
+		<meta name="format-detection" content="telephone=no">
 
 		<!-- PAGE TITLE HERE -->
-		<title>Zowasel User--Dashboard</title>
+		<title>Add Crop For Auction</title>
 		<!-- FAVICONS ICON -->
 		<link rel="shortcut icon" type="image/png" href="images/favicon.png">
-
-		<link href="./vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
-		<link href="./vendor/swiper/css/swiper-bundle.min.css" rel="stylesheet">
-		<link href="./vendor/swiper/css/swiper-bundle.min.css" rel="stylesheet">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.6.4/nouislider.min.css">
-		<link href="./vendor/datatables/css/jquery.dataTables.min.css" rel="stylesheet">
-		<link href="https://cdn.datatables.net/buttons/1.6.4/css/buttons.dataTables.min.css" rel="stylesheet">
-		<link href="vendor/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
-
-		<!-- tagify-css -->
-		<link href="./vendor/tagify/dist/tagify.css" rel="stylesheet">
-
-		<!-- Style css -->
-		<link href="./css/style.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+		<!-- Form step -->
+		<link href="vendor/jquery-smartwizard/dist/css/smart_wizard.min.css" rel="stylesheet">
+		<!-- Custom Stylesheet -->
+		<link href="vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
 		<link rel="stylesheet" href="./css/custom.css">
 
 	</head>
@@ -45,10 +37,10 @@
         Preloader start
     ********************-->
 		<div id="preloader">
-		<div>
-			<img src="images/pre.gif" alt=""> 
+			<div>
+				<img src="images/pre.gif" alt="">
+			</div>
 		</div>
-    </div>
 		<!--*******************
         Preloader end
     ********************-->
@@ -95,7 +87,7 @@
 						<div class="collapse navbar-collapse justify-content-between">
 							<div class="header-left">
 								<div class="dashboard_bar">
-									Dashboard
+									New Crop For Auction
 								</div>
 							</div>
 							<div class="header-right d-flex align-items-center">
@@ -299,7 +291,8 @@
 													</li>
 												</ul>
 											</div>
-											<a class="all-notification" href="all-notification.html">See all notifications
+											<a class="all-notification" href="all-notification.html">See all
+												notifications
 												<i class="ti-arrow-end"></i></a>
 									<li class="nav-item ps-3">
 										<div class="dropdown header-profile2">
@@ -452,12 +445,10 @@
 								</a>
 								<ul aria-expanded="false">
 
-									<li><a href="crop-wanted-listing.html">Crops Wanted</a></li>
+									<li><a href="./crop-wanted.html">Crops Wanted</a></li>
 									<li><a href="crop-auction-listing.html">Crop For Auction</a></li>
-									<li><a href="crop-sales-listing.html">Crops For Sale</a></li>
-									<li><a href="mycrops-auction-sales.html">My Crops(Cooperate view)</a></li>
-									<li><a href="mycrops-wanted.html">My Crops(Merchant view)</a></li>
-									<li><a href="my-sales.html">My Sales</a></li>
+									<li><a href="./products.html">Crops For Sale</a></li>
+									<li><a href="./sales.html">My Sales</a></li>
 									<li><a href="./order.html">My Orders</a></li>
 								</ul>
 							</li>
@@ -592,452 +583,534 @@
         ***********************************-->
 			<div class="content-body">
 				<div class="container-fluid">
-					<!-- welcome Address   -->
-					<div class="mb-5 row align-items-center">
-						<div class="col-md-9">
-							<h3 class="">Welcome, <span>User</span></h3>
-						</div>
-						<!-- select region to view stats  -->
-						<!-- <div class="col-md-3">
-						<label for="">Select Region</label>
-						<select name="" id="" class="form-control form-control-select">
-							<option value="">Global</option>
-							<option value="">Kenya</option>
-							<option value="">Nigeria</option>
-							<option value="">Tanzania</option>
-						</select>
-					</div> -->
-					</div>
-					<!-- Card Stats  -->
+
+					<!-- row -->
 					<div class="row">
 						<div class="col-xl-12 col-xxl-12">
-							<div class="row">
-								<div class="col-xl-12">
-									<div class="row">
-										<!-- Cards Statistic Begins Here  -->
-										<div class="col-xl-12">
-											<div class="row row-cols-lg-4 row-cols-md-2 row-cols-sm-1">
-												<!-- Total Crops  -->
-												<div class="col cursor">
-													<div class="card">
-														<div class="card-body depostit-card">
-															<div
-																class="depostit-card-media d-flex justify-content-between style-1">
-																<div>
-																	<h6>Total Crops sold</h6>
-																	<h3 class="mt-3">0</h3>
-																</div>
-																<div class="icon-box bg-info">
-																	<svg xmlns="http://www.w3.org/2000/svg"
-																		class="icon icon-tabler icon-tabler-seeding"
-																		width="32" height="32" viewBox="0 0 24 24"
-																		stroke-width="1.5" stroke="#ffffff" fill="none"
-																		stroke-linecap="round" stroke-linejoin="round">
-																		<path stroke="none" d="M0 0h24v24H0z"
-																			fill="none" />
-																		<path
-																			d="M12 10a6 6 0 0 0 -6 -6h-3v2a6 6 0 0 0 6 6h3" />
-																		<path
-																			d="M12 14a6 6 0 0 1 6 -6h3v1a6 6 0 0 1 -6 6h-3" />
-																		<path d="M12 20l0 -10" />
-																	</svg>
-																</div>
-															</div>
+							<div class="card">
+							
+								<div class="card-body">
+									<div id="smartwizard" class="form-wizard order-create">
+										<ul class="nav nav-wizard">
+											<li><a class="nav-link" href="#wizard_Service">
+													<span>1</span>
+												</a></li>
+											<li><a class="nav-link" href="#wizard_Time">
+													<span>2</span>
+												</a></li>
+											<li><a class="nav-link" href="#wizard_Details">
+													<span>3</span>
+												</a></li>
+											
+										</ul>
+										<div class="tab-content">
+											<div id="wizard_Service" class="tab-pane" role="tabpanel">
+												<div class="alert alert-primary w-25">
+													<strong>Crop Details</strong>
+													</button>
+												</div>
+												<div class="row">
+													<div class="col-lg-6 mb-2">
+														<div class="mb-3">
+															<label class="form-label">Crop Category:</label>
+															<select class="default-select  form-control wide" required>
+																<option>1</option>
+																<option>2</option>
+																<option>3</option>
+																<option>4</option>
+															</select>
+														</div>
+													</div>
+													<div class="col-lg-6 mb-2">
+														<div class="mb-3">
+															<label class="form-label">Product sub category:</label>
+															<select class="default-select  form-control wide" required>
+																<option>1</option>
+																<option>2</option>
+																<option>3</option>
+																<option>4</option>
+															</select>
+														</div>
+													</div>
+													<div class="col-lg-6 mb-2">
+														<div class="mb-3">
+															<label class="form-label">Product Color:</label>
+															<select class="default-select  form-control wide" required>
+																<option>1</option>
+																<option>2</option>
+																<option>3</option>
+																<option>4</option>
+															</select>
+														</div>
+													</div>
+													<div class="col-lg-6 mb-2">
+														<div class="mb-3">
+															<label class="form-label">Moisture Content (MC):</label>
+															<select class="default-select  form-control wide" required>
+																<option>1</option>
+																<option>2</option>
+																<option>3</option>
+																<option>4</option>
+															</select>
+														</div>
+													</div>
+													<div class="col-lg-6 mb-2">
+														<div class="mb-3">
+															<label class="form-label">Foreign Matter(FM):</label>
+															<select class="default-select  form-control wide" required>
+																<option>1</option>
+																<option>2</option>
+																<option>3</option>
+																<option>4</option>
+															</select>
+														</div>
+													</div>
+													<div class="col-lg-6 mb-2">
+														<div class="mb-3">
+															<label class="form-label">Test Weight:</label>
+															<select class="default-select  form-control wide" required>
+																<option>1</option>
+																<option>2</option>
+																<option>3</option>
+																<option>4</option>
+															</select>
+														</div>
+													</div>
 
+													<div class="col-lg-6 mb-2">
+														<div class="mb-3">
+															<label class="form-label">Negotiate:</label>
+															<select class="default-select  form-control wide" required>
+																<option>1</option>
+																<option>2</option>
+																<option>3</option>
+																<option>4</option>
+															</select>
+														</div>
+													</div>
+													<div class="col-lg-6 mb-2">
+														<div class="mb-3">
+															<label class="form-label">Currency:</label>
+															<select class="default-select  form-control wide" required>
+																<option>1</option>
+																<option>2</option>
+																<option>3</option>
+																<option>4</option>
+															</select>
+														</div>
+													</div>
+													<div class="col-lg-6 mb-2">
+														<div class="mb-3">
+															<label class="form-label">Quality Description:</label>
+															<textarea class="form-txtarea form-control" rows="8"
+																id="comment"></textarea>
 														</div>
 													</div>
 												</div>
-												<!-- Total Sales  -->
-												<div class="col cursor">
-													<div class="card">
-														<div class="card-body depostit-card">
-															<div
-																class="depostit-card-media d-flex justify-content-between style-1">
-																<div>
-																	<h6>Total Crops Bought</h6>
-																	<h3 class="mt-3">0</h3>
-																</div>
-																<div class="icon-box bg-primary">
-																	<svg xmlns="http://www.w3.org/2000/svg"
-																		class="icon icon-tabler icon-tabler-building-store"
-																		width="32" height="32" viewBox="0 0 24 24"
-																		stroke-width="1.5" stroke="#ffffff" fill="none"
-																		stroke-linecap="round" stroke-linejoin="round">
-																		<path stroke="none" d="M0 0h24v24H0z"
-																			fill="none" />
-																		<path d="M3 21l18 0" />
-																		<path
-																			d="M3 7v1a3 3 0 0 0 6 0v-1m0 1a3 3 0 0 0 6 0v-1m0 1a3 3 0 0 0 6 0v-1h-18l2 -4h14l2 4" />
-																		<path d="M5 21l0 -10.15" />
-																		<path d="M19 21l0 -10.15" />
-																		<path
-																			d="M9 21v-4a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v4" />
-																	</svg>
-																</div>
-															</div>
+											</div>
+											<div id="wizard_Time" class="tab-pane" role="tabpanel">
 
+												<div class="alert alert-primary w-25">
+													<strong>Quantity and Pricing</strong>
+													</button>
+												</div>
+												<div class="row">
+													<div class="col-lg-6 mb-2">
+														<div class="mb-3">
+															<label class="text-label form-label">Crop quantity*</label>
+															<input type="number" name="firstName" class="form-control"
+																required>
+														</div>
+													</div>
+													<div class="col-lg-6 mb-2">
+														<div class="mb-3">
+															<label class="text-label form-label">Amount/offer*</label>
+															<input type="number" name="lastName" class="form-control"
+																required>
+														</div>
+													</div>
+													<div class="col-lg-6 mb-2">
+														<div class="mb-3">
+															<label class="text-label form-label">Zip
+																code/postal*</label>
+															<input type="text" class="form-control"
+																id="inputGroupPrepend2"
+																aria-describedby="inputGroupPrepend2"
+																placeholder="123456" required>
+														</div>
+													</div>
+													<div class="col-lg-6 mb-2">
+														<div class="mb-3">
+															<label class="text-label form-label">Warehouse
+																Address*</label>
+															<input type="text" name="phoneNumber" class="form-control"
+																placeholder="Abuja Warehouse 2" required>
+														</div>
+													</div>
+
+													<div class="col-lg-6 mb-2">
+														<div class="mb-3">
+															<label class="form-label">Country*:</label>
+															<select class="default-select  form-control wide" required>
+																<option>1</option>
+																<option>2</option>
+																<option>3</option>
+																<option>4</option>
+															</select>
+														</div>
+													</div>
+													<div class="col-lg-6 mb-2">
+														<div class="mb-3">
+															<label class="form-label">State*:</label>
+															<select class="default-select  form-control wide" required>
+																<option>1</option>
+																<option>2</option>
+																<option>3</option>
+																<option>4</option>
+															</select>
+														</div>
+													</div>
+													<div class="col-lg-6 mb-2">
+														<div class="mb-3">
+															<label for="formFileMultiple" class="form-label">Select at
+																least 2 files (Multiple files input)
+															</label>
+															<input class="form-control" type="file"
+																id="formFileMultiple" multiple="">
+														</div>
+
+													</div>
+													<div class="col-lg-6 mb-3">
+														<div class="mb-3">
+															<label class="text-label form-label">Enter video URL <span
+																	class="fs-6 fw-lighter">-optional</span>
+															</label>
+															<input type="text" name="place" class="form-control"
+																required>
 														</div>
 													</div>
 												</div>
-												<!-- Total Wallet  -->
-												<div class="col cursor">
-													<div class="card same-card">
-														<div class="card-body depostit-card p-0">
-															<div
-																class="depostit-card-media d-flex justify-content-between pb-0">
-																<div>
-																	<h6>Total Income</h6>
-																	<h3 class="mt-3">NGN</h3>
-																</div>
-																<div class="icon-box bg-purple">
-																	<svg xmlns="http://www.w3.org/2000/svg"
-																		class="icon icon-tabler icon-tabler-wallet"
-																		width="32" height="32" viewBox="0 0 24 24"
-																		stroke-width="1.5" stroke="#ffffff" fill="none"
-																		stroke-linecap="round" stroke-linejoin="round">
-																		<path stroke="none" d="M0 0h24v24H0z"
-																			fill="none" />
-																		<path
-																			d="M17 8v-3a1 1 0 0 0 -1 -1h-10a2 2 0 0 0 0 4h12a1 1 0 0 1 1 1v3m0 4v3a1 1 0 0 1 -1 1h-12a2 2 0 0 1 -2 -2v-12" />
-																		<path d="M20 12v4h-4a2 2 0 0 1 0 -4h4" />
-																	</svg>
-																</div>
-															</div>
+											</div>
 
+											<div id="wizard_Details" class="tab-pane" role="tabpanel">
+												<div class="alert alert-primary w-25">
+													<strong>Crop Specification</strong>
+													</button>
+												</div>
+												<div class="row">
+													<div class="col-lg-6 mb-2">
+														<div class="mb-3">
+															<label class="text-label form-label">Broken grains <span
+																	class="fs-6 fw-lighter">-optional</span>
+															</label>
+															<select class="default-select  form-control wide" required>
+																<option>1</option>
+																<option>2</option>
+																<option>3</option>
+																<option>4</option>
+															</select>
 														</div>
 													</div>
-												</div>
-												<!-- Total Regions  -->
-												<div class="col cursor">
-													<div class="card">
-														<div class="card-body depostit-card">
-															<div
-																class="depostit-card-media d-flex justify-content-between style-1">
-																<div>
-																	<h6>Total Expenses</h6>
-																	<h3 class="mt-3">0</h3>
-																</div>
-																<div class="icon-box bg-secondary">
-																	<svg xmlns="http://www.w3.org/2000/svg"
-																		class="icon icon-tabler icon-tabler-world"
-																		width="32" height="32" viewBox="0 0 24 24"
-																		stroke-width="1.5" stroke="#ffffff" fill="none"
-																		stroke-linecap="round" stroke-linejoin="round">
-																		<path stroke="none" d="M0 0h24v24H0z"
-																			fill="none" />
-																		<path
-																			d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" />
-																		<path d="M3.6 9h16.8" />
-																		<path d="M3.6 15h16.8" />
-																		<path d="M11.5 3a17 17 0 0 0 0 18" />
-																		<path d="M12.5 3a17 17 0 0 1 0 18" />
-																	</svg>
-																</div>
-															</div>
+													<div class="col-lg-6 mb-2">
+														<div class="mb-3">
+															<label class="text-label form-label">Weevil <span
+																	class="fs-6 fw-lighter">-optional</span>
+															</label>
+															<select class="default-select  form-control wide" required>
+																<option>1</option>
+																<option>2</option>
+																<option>3</option>
+																<option>4</option>
+															</select>
+														</div>
+													</div>
+													<div class="col-lg-6 mb-2">
+														<div class="mb-3">
+															<label class="text-label form-label">Hardness <span
+																	class="fs-6 fw-lighter">-optional</span>
+															</label>
+															<select class="default-select  form-control wide" required>
+																<option>1</option>
+																<option>2</option>
+																<option>3</option>
+																<option>4</option>
+															</select>
+														</div>
+													</div>
+													<div class="col-lg-6 mb-2">
+														<div class="mb-3">
+															<label class="text-label form-label">Oil Content <span
+																	class="fs-6 fw-lighter">-optional</span>
+															</label>
+															<select class="default-select  form-control wide" required>
+																<option>1</option>
+																<option>2</option>
+																<option>3</option>
+																<option>4</option>
+															</select>
+														</div>
+													</div>
+													<div class="col-lg-6 mb-2">
+														<div class="mb-3">
+															<label class="text-label form-label">Grain grains <span
+																	class="fs-6 fw-lighter">-optional</span>
+															</label>
+															<select class="default-select  form-control wide" required>
+																<option>1</option>
+																<option>2</option>
+																<option>3</option>
+																<option>4</option>
+															</select>
+														</div>
+													</div>
+													<div class="col-lg-6 mb-2">
+														<div class="mb-3">
+															<label class="text-label form-label">Total Defects <span
+																	class="fs-6 fw-lighter">-optional</span>
+															</label>
+															<select class="default-select  form-control wide" required>
+																<option>1</option>
+																<option>2</option>
+																<option>3</option>
+																<option>4</option>
+															</select>
+														</div>
+													</div>
 
+													<div class="col-lg-6 mb-2">
+														<div class="mb-3">
+															<label class="text-label form-label">Ash Content <span
+																	class="fs-6 fw-lighter">-optional</span>
+															</label>
+															<select class="default-select  form-control wide" required>
+																<option>1</option>
+																<option>2</option>
+																<option>3</option>
+																<option>4</option>
+															</select>
+														</div>
+													</div>
+													<div class="col-lg-6 mb-2">
+														<div class="mb-3">
+															<label class="text-label form-label">Volatile <span
+																	class="fs-6 fw-lighter">-optional</span>
+															</label>
+															<select class="default-select  form-control wide" required>
+																<option>1</option>
+																<option>2</option>
+																<option>3</option>
+																<option>4</option>
+															</select>
+														</div>
+													</div>
+													<div class="col-lg-6 mb-2">
+														<div class="mb-3">
+															<label class="text-label form-label">Drying Process <span
+																	class="fs-6 fw-lighter">-optional</span>
+															</label>
+															<select class="default-select  form-control wide" required>
+																<option>1</option>
+																<option>2</option>
+																<option>3</option>
+																<option>4</option>
+															</select>
+														</div>
+													</div>
+													<div class="col-lg-6 mb-2">
+														<div class="mb-3">
+															<label class="text-label form-label">Curcumin Content <span
+																	class="fs-6 fw-lighter">-optional</span>
+															</label>
+															<select class="default-select  form-control wide" required>
+																<option>1</option>
+																<option>2</option>
+																<option>3</option>
+																<option>4</option>
+															</select>
+														</div>
+													</div>
+													<div class="col-lg-6 mb-2">
+														<div class="mb-3">
+															<label class="text-label form-label">Dockage <span
+																	class="fs-6 fw-lighter">-optional</span>
+															</label>
+															<select class="default-select  form-control wide" required>
+																<option>1</option>
+																<option>2</option>
+																<option>3</option>
+																<option>4</option>
+															</select>
+														</div>
+													</div>
+													<div class="col-lg-6 mb-2">
+														<div class="mb-3">
+															<label class="text-label form-label">Moisture<span
+																	class="fs-6 fw-lighter">-optional</span>
+															</label>
+															<select class="default-select  form-control wide" required>
+																<option>1</option>
+																<option>2</option>
+																<option>3</option>
+																<option>4</option>
+															</select>
+														</div>
+													</div>
+													<div class="col-lg-6 mb-2">
+														<div class="mb-3">
+															<label class="text-label form-label">Rotten/Shriveled <span
+																	class="fs-6 fw-lighter">-optional</span>
+															</label>
+															<select class="default-select  form-control wide" required>
+																<option>1</option>
+																<option>2</option>
+																<option>3</option>
+																<option>4</option>
+															</select>
+														</div>
+													</div>
+													<div class="col-lg-6 mb-2">
+														<div class="mb-3">
+															<label class="text-label form-label">Damage kernel (DK) <span
+																	class="fs-6 fw-lighter">-optional</span>
+															</label>
+															<select class="default-select  form-control wide" required>
+																<option>1</option>
+																<option>2</option>
+																<option>3</option>
+																<option>4</option>
+															</select>
+														</div>
+													</div>
+													<div class="col-lg-6 mb-2">
+														<div class="mb-3">
+															<label class="text-label form-label">Splits <span
+																	class="fs-6 fw-lighter">-optional</span>
+															</label>
+															<select class="default-select  form-control wide" required>
+																<option>1</option>
+																<option>2</option>
+																<option>3</option>
+																<option>4</option>
+															</select>
+														</div>
+													</div>
+													<div class="col-lg-6 mb-2">
+														<div class="mb-3">
+															<label class="text-label form-label">Infestation <span
+																	class="fs-6 fw-lighter">-optional</span>
+															</label>
+															<select class="default-select  form-control wide" required>
+																<option>1</option>
+																<option>2</option>
+																<option>3</option>
+																<option>4</option>
+															</select>
+														</div>
+													</div>
+													<div class="col-lg-6 mb-2">
+														<div class="mb-3">
+															<label class="text-label form-label">Hectolter Test Weight<span
+																	class="fs-6 fw-lighter">-optional</span>
+															</label>
+															<select class="default-select  form-control wide" required>
+																<option>1</option>
+																<option>2</option>
+																<option>3</option>
+																<option>4</option>
+															</select>
+														</div>
+													</div>
+													<div class="col-lg-6 mb-2">
+														<div class="mb-3">
+															<label class="text-label form-label">Acid Insoluble Ash <span
+																	class="fs-6 fw-lighter">-optional</span>
+															</label>
+															<select class="default-select  form-control wide" required>
+																<option>1</option>
+																<option>2</option>
+																<option>3</option>
+																<option>4</option>
+															</select>
+														</div>
+													</div>
+													<div class="col-lg-6 mb-2">
+														<div class="mb-3">
+															<label class="text-label form-label">Mold % by weight <span
+																	class="fs-6 fw-lighter">-optional</span>
+															</label>
+															<select class="default-select  form-control wide" required>
+																<option>1</option>
+																<option>2</option>
+																<option>3</option>
+																<option>4</option>
+															</select>
+														</div>
+													</div>
+													<div class="col-lg-6 mb-2">
+														<div class="mb-3">
+															<label class="text-label form-label">Whole Dead Insect <span
+																	class="fs-6 fw-lighter">-optional</span>
+															</label>
+															<select class="default-select  form-control wide" required>
+																<option>1</option>
+																<option>2</option>
+																<option>3</option>
+																<option>4</option>
+															</select>
+														</div>
+													</div>
+													<div class="col-lg-6 mb-2">
+														<div class="mb-3">
+															<label class="text-label form-label">insect Defiled/Infested, By Weight <span
+																	class="fs-6 fw-lighter">-optional</span>
+															</label>
+															<select class="default-select  form-control wide" required>
+																<option>1</option>
+																<option>2</option>
+																<option>3</option>
+																<option>4</option>
+															</select>
+														</div>
+													</div>
+													<div class="col-lg-6 mb-2">
+														<div class="mb-3">
+															<label class="text-label form-label">Extraneous, % By Weight <span
+																	class="fs-6 fw-lighter">-optional</span>
+															</label>
+															<select class="default-select  form-control wide" required>
+																<option>1</option>
+																<option>2</option>
+																<option>3</option>
+																<option>4</option>
+															</select>
+														</div>
+													</div>
+													<div class="col-lg-6 mb-2">
+														<div class="mb-3">
+															<label class="text-label form-label">Mammalian <span
+																	class="fs-6 fw-lighter">-optional</span>
+															</label>
+															<select class="default-select  form-control wide" required>
+																<option>1</option>
+																<option>2</option>
+																<option>3</option>
+																<option>4</option>
+															</select>
 														</div>
 													</div>
 												</div>
 											</div>
 										</div>
-										<!-- Seconds Cards Sections  -->
-										<div class="col-xl-12">
-											<div class="row row-cols-lg-4 row-cols-md-2 row-cols-sm-1">
-												<!-- Total Administratoors  -->
-												<!-- <div class="col cursor">
-												<div class="card">
-													<div class="card-body depostit-card">
-														<div class="depostit-card-media d-flex justify-content-between style-1">
-															<div>
-																<h6>Total Administrators</h6>
-																<h3 class="mt-3">0</h3>
-															</div>
-															<div class="icon-box bg-info">
-																<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-square-rounded" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-																	<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-																	<path d="M12 13a3 3 0 1 0 0 -6a3 3 0 0 0 0 6z" />
-																	<path d="M12 3c7.2 0 9 1.8 9 9s-1.8 9 -9 9s-9 -1.8 -9 -9s1.8 -9 9 -9z" />
-																	<path d="M6 20.05v-.05a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v.05" />
-																  </svg>
-															</div>
-														</div>
-														
-													</div>
-												</div>	
-											</div> -->
-												<!-- Total Deliveries  -->
-												<div class="col cursor">
-													<div class="card">
-														<div class="card-body depostit-card">
-															<div
-																class="depostit-card-media d-flex justify-content-between style-1">
-																<div>
-																	<h6>Total Deliveries</h6>
-																	<h3 class="mt-3">0</h3>
-																</div>
-																<div class="icon-box bg-primary">
-																	<svg xmlns="http://www.w3.org/2000/svg"
-																		class="icon icon-tabler icon-tabler-truck"
-																		width="32" height="32" viewBox="0 0 24 24"
-																		stroke-width="1.5" stroke="#ffffff" fill="none"
-																		stroke-linecap="round" stroke-linejoin="round">
-																		<path stroke="none" d="M0 0h24v24H0z"
-																			fill="none" />
-																		<path
-																			d="M7 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
-																		<path
-																			d="M17 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
-																		<path
-																			d="M5 17h-2v-11a1 1 0 0 1 1 -1h9v12m-4 0h6m4 0h2v-6h-8m0 -5h5l3 5" />
-																	</svg>
-																</div>
-															</div>
-
-														</div>
-													</div>
-												</div>
-												<!-- Total Farmer  -->
-												<!-- <div class="col cursor">
-												<div class="card same-card">
-													<div class="card-body depostit-card p-0">
-														<div class="depostit-card-media d-flex justify-content-between pb-0">
-															<div>
-																<h6>Total Farmer</h6>
-																<h3 class="mt-3">0</h3>
-															</div>
-															<div class="icon-box bg-purple">
-																<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-users-group" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-																	<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-																	<path d="M10 13a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
-																	<path d="M8 21v-1a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v1" />
-																	<path d="M15 5a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
-																	<path d="M17 10h2a2 2 0 0 1 2 2v1" />
-																	<path d="M5 5a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
-																	<path d="M3 13v-1a2 2 0 0 1 2 -2h2" />
-																  </svg>
-																
-															</div>
-														</div>
-														
-													</div>
-												</div>
-											</div> -->
-												<!-- Total Users  -->
-												<!-- <div class="col cursor">
-												<div class="card">
-													<div class="card-body depostit-card">
-														<div class="depostit-card-media d-flex justify-content-between style-1">
-															<div>
-																<h6>Total Users</h6>
-																<h3 class="mt-3">0</h3>
-															</div>
-															<div class="icon-box bg-secondary">
-																<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-users" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-																	<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-																	<path d="M9 7m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" />
-																	<path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
-																	<path d="M16 3.13a4 4 0 0 1 0 7.75" />
-																	<path d="M21 21v-2a4 4 0 0 0 -3 -3.85" />
-																  </svg>
-															</div>
-														</div>
-														
-													</div>
-												</div>	
-											</div> -->
-											</div>
-										</div>
-
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="row">
-							<!-- Transaction summary table  -->
-							<div class="col-xl-8 col-xxl-8 pe-0">
-								<div class="card">
-									<div class="card-body p-0">
-										<div class="table-responsive active-projects">
-											<div class="tbl-caption d-none">
-												<h4 class="heading mb-0">Recent Transactions</h4>
-											</div>
-											<table id="projects-tbl" class="table">
-												<thead>
-													<tr>
-														<th class="text-white">Transaction ID</th>
-														<th class="text-white">Amount</th>
-														<th class="text-white">Type</th>
-														<th class="text-white">Status</th>
-														<th class="text-white">Date</th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<td>1</td>
-														<td>
-															<div class="d-flex align-items-center">
-
-																<p class="mb-0 ms-2">7,860</p>
-															</div>
-														</td>
-														<td>
-															<div class="d-flex align-items-center">
-																<p class="mb-0 ms-2">order</p>
-															</div>
-														</td>
-														<td class="pe-2">
-															<span
-																class="badge badge-primary light border-0 text-white">Inprogress</span>
-														</td>
-														<td>
-															<span>06 Sep 2021</span>
-														</td>
-
-													</tr>
-													<tr>
-														<td>2</td>
-														<td>
-															<div class="d-flex align-items-center">
-
-																<p class="mb-0 ms-2">9000</p>
-															</div>
-														</td>
-														<td>
-															<div class="d-flex align-items-center">
-
-																<p class="mb-0 ms-2">Order</p>
-															</div>
-														</td>
-
-														<td class="pe-2">
-															<span
-																class="badge badge-danger light border-0">Pending</span>
-														</td>
-														<td>
-															<span>06 Sep 2021</span>
-														</td>
-
-													</tr>
-													<tr>
-														<td>3</td>
-														<td>
-															<div class="d-flex align-items-center">
-
-																<p class="mb-0 ms-2">19,800</p>
-															</div>
-														</td>
-														<td>Order</td>
-														<td class="pe-2">
-															<span
-																class="badge badge-success light border-0">Completed</span>
-														</td>
-														<td>
-															<span>06 Sep 2021</span>
-														</td>
-
-
-
-												</tbody>
-
-											</table>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-xl-4 col-xxl-4">
-								<div class="row row-cols-lg-1 row-cols-md-1 row-cols-sm-1">
-									<!-- Transction Volume  -->
-									<div class="col cursor">
-										<div class="card">
-											<div class="card-body depostit-card">
-												<div class="depostit-card-media d-flex justify-content-between style-1">
-													<div>
-														<h6>Transaction Volume</h6>
-														<h3 class="mt-3">0</h3>
-													</div>
-													<div class="icon-box bg-purple">
-														<svg xmlns="http://www.w3.org/2000/svg"
-															class="icon icon-tabler icon-tabler-transform" width="32"
-															height="32" viewBox="0 0 24 24" stroke-width="1.5"
-															stroke="#ffffff" fill="none" stroke-linecap="round"
-															stroke-linejoin="round">
-															<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-															<path d="M3 6a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
-															<path d="M21 11v-3a2 2 0 0 0 -2 -2h-6l3 3m0 -6l-3 3" />
-															<path d="M3 13v3a2 2 0 0 0 2 2h6l-3 -3m0 6l3 -3" />
-															<path d="M15 18a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
-														</svg>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<!-- Completed Transactions  -->
-									<div class="col cursor">
-										<div class="card">
-											<div class="card-body depostit-card">
-												<div class="depostit-card-media d-flex justify-content-between style-1">
-													<div>
-														<h6>Completed Transactions</h6>
-														<h3 class="mt-3">0</h3>
-													</div>
-													<div class="icon-box bg-primary">
-														<svg xmlns="http://www.w3.org/2000/svg"
-															class="icon icon-tabler icon-tabler-transfer-in" width="32"
-															height="32" viewBox="0 0 24 24" stroke-width="1.5"
-															stroke="#ffffff" fill="none" stroke-linecap="round"
-															stroke-linejoin="round">
-															<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-															<path d="M4 18v3h16v-14l-8 -4l-8 4v3" />
-															<path d="M4 14h9" />
-															<path d="M10 11l3 3l-3 3" />
-														</svg>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<!-- Pending Transactions   -->
-									<div class="col cursor">
-										<div class="card same-card pb-3">
-											<div class="card-body depostit-card p-0">
-												<div class="depostit-card-media d-flex justify-content-between pb-0">
-													<div>
-														<h6>Pending Transaction</h6>
-														<h3 class="mt-3">0</h3>
-													</div>
-													<div class="icon-box bg-secondary">
-														<svg xmlns="http://www.w3.org/2000/svg"
-															class="icon icon-tabler icon-tabler-arrows-transfer-up"
-															width="32" height="32" viewBox="0 0 24 24"
-															stroke-width="1.5" stroke="#ffffff" fill="none"
-															stroke-linecap="round" stroke-linejoin="round">
-															<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-															<path d="M7 21v-6" />
-															<path d="M20 6l-3 -3l-3 3" />
-															<path d="M17 3v18" />
-															<path d="M10 18l-3 3l-3 -3" />
-															<path d="M7 3v2" />
-															<path d="M7 9v2" />
-														</svg>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-
-						</div>
-
 					</div>
 				</div>
 			</div>
-
 			<!--**********************************
             Content body end
         ***********************************-->
-
 
 
 		</div>
@@ -1049,45 +1122,32 @@
         Scripts
     ***********************************-->
 		<!-- Required vendors -->
-		<script src="./vendor/global/global.min.js"></script>
-		<script src="./vendor/chart.js/Chart.bundle.min.js"></script>
-		<script src="./vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
-		<script src="./vendor/apexchart/apexchart.js"></script>
+		<script src="vendor/global/global.min.js"></script>
 
-		<!-- Dashboard 1 -->
-		<script src="./js/dashboard/dashboard-1.js"></script>
-		<script src="./vendor/draggable/draggable.js"></script>
-		<script src="./vendor/swiper/js/swiper-bundle.min.js"></script>
+		<script src="vendor/jquery-steps/build/jquery.steps.min.js"></script>
+		<script src="vendor/jquery-validation/jquery.validate.min.js"></script>
+		<!-- Form validate init -->
+		<script src="js/plugins-init/jquery.validate-init.js"></script>
 
 
-		<!-- tagify -->
-		<script src="./vendor/tagify/dist/tagify.js"></script>
+		<!-- Form Steps -->
+		<script src="vendor/jquery-smartwizard/dist/js/jquery.smartWizard.js"></script>
+		<script src="vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
 
-		<script src="./vendor/datatables/js/jquery.dataTables.min.js"></script>
-		<script src="./vendor/datatables/js/dataTables.buttons.min.js"></script>
-		<script src="./vendor/datatables/js/buttons.html5.min.js"></script>
-		<script src="./vendor/datatables/js/jszip.min.js"></script>
-		<script src="./js/plugins-init/datatables.init.js"></script>
-
-		<!-- Apex Chart -->
-
-		<script src="vendor/bootstrap-datetimepicker/js/moment.js"></script>
-		<script src="vendor/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
-
-
-		<!-- Vectormap -->
-		<script src="./vendor/jqvmap/js/jquery.vmap.min.js"></script>
-		<script src="./vendor/jqvmap/js/jquery.vmap.world.js"></script>
-		<script src="./vendor/jqvmap/js/jquery.vmap.usa.js"></script>
-		<script src="./js/custom.js"></script>
-		<script src="./js/deznav-init.js"></script>
-		<script src="./js/demo.js"></script>
-		<script src="./js/styleSwitcher.js"></script>
+		<script src="js/custom.js"></script>
+		<script src="js/deznav-init.js"></script>
+		<script src="js/demo.js"></script>
+		<script src="js/styleSwitcher.js"></script>
 		<script>
-			$('#sideNav').load("./component/sidenav.html");
+			$(document).ready(function () {
+				// SmartWizard initialize
+				$('#smartwizard').smartWizard();
+			});
 		</script>
 
-
 	</body>
+
+
+	<!-- Mirrored from yashadmin.dexignzone.com/xhtml/form-wizard.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 04 Jan 2024 00:07:43 GMT -->
 
 </html>
