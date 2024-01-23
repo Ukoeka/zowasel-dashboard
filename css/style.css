@@ -35925,6 +35925,9 @@ input#checkAll.form-check-input:checked {
 .show-pass {
   border-radius: 0 0.5rem 0.5rem 0 !important;
 }
+.show-pass1 {
+  border-radius: 0 0.5rem 0.5rem 0 !important;
+}
 
 .form-file .form-control {
   margin: 0;
@@ -36459,6 +36462,21 @@ textarea.form-control {
   display: none;
 }
 .show-pass.active .fa-eye {
+  display: inline-block;
+}
+
+
+
+.show-pass1 {
+  cursor: pointer;
+}
+.show-pass1 .fa-eye {
+  display: none;
+}
+.show-pass1.active .fa-eye-slash {
+  display: none;
+}
+.show-pass1.active .fa-eye {
   display: inline-block;
 }
 
@@ -53662,5 +53680,181 @@ html[dir="rtl"]
 .main-item img {
   width: 80%;
 }
+.big-green-text {
+  color: #05B050;
+  font-family: Maven Pro;
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 27px;
+  margin-left: 15px;
+}
+.qnt-text{
+  font-family: Maven Pro;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 21px;
+}
+.carousel-item img{
+  width: 100%;
+}
+.com-details{
+  display: flex;
+  flex-direction: row;
+  padding: 20px 45px;
+  background: #F4F4F4;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 30px;
+  border-radius: 15px;
+}
+.the-btns{
+  display: flex;
+  gap: 20px;
+}
+.view-btn{
+  background: #FB8A2E;
+  width: 120px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-family: Maven Pro;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 20px;
+}
+.view-btn{
+  background: #FB8A2E;
+  width: 120px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-family: Maven Pro;
+  font-size: 15px;
+  font-weight: 600;
+}
+.sub-btn{
+  background: white;
+  width: 120px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #0065FF;
+  border: 2px solid #0065FF;
+  border-radius: 10px;
+  font-family: Maven Pro;
+  font-size: 15px;
+  font-weight: 600;
+}
+.topic{
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.topic h3{
+  color: #696671;
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 800;
+}
+.topic button {
+  background: #05B050;
+  width: 170px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-family: Maven Pro;
+  font-size: 15px;
+  font-weight: 600;
+}
+.products-container{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 20px;
+}
+.product-name{
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 700;
+  color: #05B050;
+}
+.each-product{
+  width: 250px;
+  padding: 10px;
+  background-color: white;
+  margin-bottom: 30px;
+  border-radius: 20px;
+}
+.img-cont{
+  position: relative;
+}
+.img-cont .sus-container{
+  background-color: white;
+  padding: 5px;
+  position: absolute;
+  top: 10px;
+  right: 5px;
+}
+.sus-container h5{
+  margin: 0px;
+  color: #30BD6E;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 600;
+}
+.img-cont img{
+  width: 100%;
+}
+.each-detail{
+  display: flex;
+  justify-content: space-between;
+}
+.each-detail h5{
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 22px;
+  margin: 0px;
 
+}
+.each-detail p{
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 22px;
+  margin-bottom: 5px;
+}
+.light-text{
+  font-family: Maven Pro;
+  font-size: 20px;
+  font-weight: 700;
+
+}
+.cert-container{
+  width: 250px;
+  margin-top: 20px;
+}
+.cert-container img{
+  width: 100%;
+}
+.warehouse-container{
+  width: 250px;
+  margin-top: 20px;
+  border: 1px solid #6ED19A;
+  padding: 10px;
+}
 /* styled by Koka */
