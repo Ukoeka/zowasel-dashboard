@@ -7,7 +7,16 @@
 .text {
   color: #009440;
 }
-
+.text-orange {
+  color: #efd1ad;
+}
+.border_orange {
+  border-color: var(--secondary) !important;
+}
+/* background */
+.bg-orange-light {
+  background-color: #efdbb8;
+}
 /* --------------------------------- Button --------------------------------- */
 .btn-primary-2 {
   background-color: white;
