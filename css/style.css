@@ -53857,4 +53857,25 @@ html[dir="rtl"]
   border: 1px solid #6ED19A;
   padding: 10px;
 }
+.card-height{
+  height: 300px;
+}
+.active-card{
+  background-image: url(../images/background/card.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+}
+.no-work.active{
+  background-color: none !important;
+  box-shadow: none !important;
+}
+.bigger-text{
+  font-size: 24px;
+  font-weight: bolder;
+}
+.go-left{
+  display: flex;
+  justify-content: flex-end;
+}
 /* styled by Koka */
