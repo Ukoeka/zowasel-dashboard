@@ -213,6 +213,8 @@ var YashAdmin = function(){
 		jQuery('.dz-chat-user-box .dz-chat-user').on('click',function(){
 			jQuery('.dz-chat-user-box').addClass('d-none');
 			jQuery('.dz-chat-history-box').removeClass('d-none');
+			jQuery('.chat-img').addClass('d-none');
+			jQuery('.product-img').removeClass('d-none')
             //$(".chatbox .msg_card_body").height(vHeightArea());
             //$(".chatbox .msg_card_body").css('height',vHeightArea());
 		}); 
@@ -220,6 +222,8 @@ var YashAdmin = function(){
 		jQuery('.dz-chat-history-back').on('click',function(){
 			jQuery('.dz-chat-user-box').removeClass('d-none');
 			jQuery('.dz-chat-history-box').addClass('d-none');
+			jQuery('.product-img').addClass('d-none')
+			jQuery('.chat-img').removeClass('d-none');
 		}); 
 		
 		jQuery('.dz-fullscreen').on('click',function(){
