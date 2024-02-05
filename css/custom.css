@@ -3,7 +3,9 @@
   --secondary: #fb8a2e;
   --primary-hover: #009440;
 }
-
+.active {
+  color:#495057 !important;
+}
 .text {
   color: #009440;
 }
