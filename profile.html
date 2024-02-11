@@ -29,7 +29,8 @@
         <link href="./vendor/datatables/css/jquery.dataTables.min.css" rel="stylesheet">
         <link href="https://cdn.datatables.net/buttons/1.6.4/css/buttons.dataTables.min.css" rel="stylesheet">
         <link href="vendor/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
-
+        <link href="vendor/dropzone/dist/dropzone.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
         <!-- tagify-css -->
         <link href="./vendor/tagify/dist/tagify.css" rel="stylesheet">
 
@@ -86,7 +87,6 @@
 
             <!--**********************************
 		
-		<!--**********************************
             Header start
         ***********************************-->
             <div class="header">
@@ -592,9 +592,6 @@
             <div class="content-body">
                 <!-- row -->
                 <div class="container-fluid">
-
-
-
                     <!-- Nav tabs -->
                     <div class="custom-tab-1">
                         <ul class="nav nav-tabs">
@@ -1345,7 +1342,11 @@
                                                                                     <div class="new-arrival-product">
                                                                                         <div
                                                                                             class="new-arrivals-img-contnent">
-                                                                                            <video src="https://youtu.be/qhepysLkX0Q?si=TSs_jYfmWSd8p5N4" class="object-fit-contain" autoplay controls></video>
+                                                                                            <video
+                                                                                                src="https://youtu.be/qhepysLkX0Q?si=TSs_jYfmWSd8p5N4"
+                                                                                                class="object-fit-contain"
+                                                                                                autoplay
+                                                                                                controls></video>
 
                                                                                         </div>
                                                                                         <div
@@ -1375,8 +1376,10 @@
                                                                                         <div
                                                                                             class="new-arrival-content text-center mt-3">
                                                                                             <h4><a
-                                                                                                    href="ecom-product-detail.html">Image title</a></h4>
-                                                                                            <p>Lorem, ipsum dolor Lorem, ipsum..</p>
+                                                                                                    href="ecom-product-detail.html">Image
+                                                                                                    title</a></h4>
+                                                                                            <p>Lorem, ipsum dolor Lorem,
+                                                                                                ipsum..</p>
 
                                                                                         </div>
                                                                                     </div>
@@ -1397,7 +1400,8 @@
                                                                                         <div
                                                                                             class="new-arrival-content text-center mt-3">
                                                                                             <h4><a
-                                                                                                    href="ecom-product-detail.html">Add Media</a></h4>
+                                                                                                    href="ecom-product-detail.html">Add
+                                                                                                    Media</a></h4>
 
                                                                                         </div>
                                                                                     </div>
@@ -1405,8 +1409,7 @@
                                                                             </div>
                                                                         </div>
                                                                         <!-- Modal -->
-                                                                        <div class="modal fade"
-                                                                            id="basicModalMedia">
+                                                                        <div class="modal fade" id="basicModalMedia">
                                                                             <div class="modal-dialog" role="document">
                                                                                 <div class="modal-content">
                                                                                     <div class="modal-header">
@@ -1421,7 +1424,7 @@
                                                                                     <div class="modal-body">
                                                                                         <div class="mb-3">
                                                                                             <label for="formText"
-                                                                                                class="form-label">Media 
+                                                                                                class="form-label">Media
                                                                                                 Title
                                                                                             </label>
                                                                                             <input class="form-control"
@@ -1430,7 +1433,7 @@
                                                                                         </div>
                                                                                         <div class="mb-3">
                                                                                             <label for="formText"
-                                                                                                class="form-label">Media 
+                                                                                                class="form-label">Media
                                                                                                 Description
                                                                                             </label>
                                                                                             <input class="form-control"
@@ -1475,88 +1478,456 @@
                             </div>
                             <div class="tab-pane fade" id="profile1">
                                 <div class="pt-4">
-                                    <h4>This is profile title</h4>
-                                    <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu
-                                        stumptown aliqua, retro synth master cleanse. Mustache cliche tempor.
-                                    </p>
-                                    <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu
-                                        stumptown aliqua, retro synth master cleanse. Mustache cliche tempor.
-                                    </p>
+                                    <div class="card w-75">
+                                        <!-- KYC verification form -->
+                                        <!-- <div class="card-body w-75">
+                                            <div class="card-use-box" style="text-align: left;">
+                                                <div class="card-header border-0">
+                                                    <h5 class="mb-3">Identity verification</h5>
+                                                    <div><Strong>Unverified</Strong></div>
+                                                </div>
+                                                
+                                                <div class="mb-3 row ">
+                                                    <div class="mb-3 col">
+                                                        <label for="selectId" class="form-label">Type</label>
+                                                        <select id="selectId"
+                                                            class="default-select form-control wide form-control-sm ">
+                                                            <option value="1">Driver License</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="mb-3 col">
+                                                        <label for="exampleInputEmail1" class="form-label">Id
+                                                            Number</label>
+                                                        <input type="text" class="form-control" id="exampleInputEmail1"
+                                                            aria-describedby="emailHelp">
+
+                                                    </div>
+                                                </div>
+                                                <div class="mb-3 row ">
+                                                    <div class="mb-3 col">
+                                                        <label for="exampleInputEmail1" class="form-label">Name</label>
+                                                        <input type="text" class="form-control" id="exampleInputEmail1"
+                                                            aria-describedby="emailHelp">
+
+                                                    </div>
+                                                    <div class="mb-3 col">
+                                                        <label for="exampleInputEmail1" class="form-label">Gender</label>
+                                                        <input type="text" class="form-control" id="exampleInputEmail1"
+                                                            aria-describedby="emailHelp">
+
+                                                    </div>
+                                                </div>
+                                                <div class="mb-3 row ">
+                                                    <div class="mb-3 col">
+                                                        <label for="exampleInputEmail1" class="form-label">Phone Number</label>
+                                                        <input type="text" class="form-control" id="exampleInputEmail1"
+                                                            aria-describedby="emailHelp">
+
+                                                    </div>
+                                                    <div class="mb-3 col">
+                                                        <label for="exampleInputEmail1" class="form-label">Address</label>
+                                                        <input type="text" class="form-control" id="exampleInputEmail1"
+                                                            aria-describedby="emailHelp">
+
+                                                    </div>
+                                                </div>  
+                                                <div class="mb-3 row ">
+                                                    <div class="mb-3 col">
+                                                        <label for="selectId" class="form-label">Country</label>
+                                                        <select id="selectId"
+                                                            class="default-select form-control wide form-control-sm ">
+                                                            <option value="1">Driver License</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="mb-3 col">
+                                                        <label for="selectId" class="form-label">State</label>
+                                                        <select id="selectId"
+                                                            class="default-select form-control wide form-control-sm ">
+                                                            <option value="1">Driver License</option>
+                                                        </select>
+                                                    </div>
+                                                </div>  
+                                                <div class="mb-3 row ">
+                                                    <div class="mb-3 col">
+                                                        <label for="exampleInputEmail1" class="form-label">City</label>
+                                                        <input type="text" class="form-control" id="exampleInputEmail1"
+                                                            aria-describedby="emailHelp">
+
+                                                    </div>
+                                                    <div class="mb-3 col">
+                                                        <label for="exampleInputEmail1" class="form-label">Date of Birth</label>
+                                                        <input type="text" class="form-control" id="exampleInputEmail1"
+                                                            aria-describedby="emailHelp">
+
+                                                    </div>
+                                                </div>
+                                                <div class="mb-3 row ">
+                                                    <div class="mb-3 col">
+                                                        <label for="exampleInputEmail1" class="form-label">BVN</label>
+                                                        <input type="text" class="form-control" id="exampleInputEmail1"
+                                                            aria-describedby="emailHelp">
+
+                                                    </div>
+                                                   
+                                                </div>
+                                                <div class="col-lg-9 col-xl-10 col-xxl-9">
+                                                    <div class="email-right-box ms-0 ">
+                                                        <div class="compose-wrapper mt-3 h-auto mb-5" id="compose-content">
+                                                            <div class="compose-content">
+                                                                <h5 class="my-3"><i class="fa fa-paperclip me-2"></i>
+                                                                    Attachment
+                                                                </h5>
+                                                                
+                                                                <div class="row">
+                                                                    <div class="col">
+                                                                        <h5><b>ID Front</b></h5>
+                                                                        <div action="#" class="dropzone"
+                                                                            style="border: 0.05rem solid;">
+                                                                            <div class="fallback">
+                                                                                <input name="file" type="file">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col">
+                                                                        <h5><b>ID Back</b></h5>
+                                                                        <div action="#" class="dropzone"
+                                                                            style="border: 0.05rem solid;">
+                                                                            <div class="fallback">
+                                                                                <input name="file" type="file" >
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                       
+                                                    </div>
+                                                </div>
+                                                <button type="btn" class="btn btn-green w-25 m-auto d-block">Save</button>
+                                            </div>
+                                           
+                                        </div> -->
+
+                                        <!-- KYC submitted form -->
+
+                                        <div class="card-body w-75">
+                                            <div class="card-use-box" style="text-align: left;">
+                                                <div class="card-header border-0">
+                                                    <h5 class="mb-3">Preview KYC</h5>
+                                                    <div><Strong>Unverified</Strong></div>
+                                                </div>
+
+                                                <div class="row mb-3">
+                                                    <div class="col">
+                                                        <strong>Name: </strong>
+                                                        <span>Emmanuel</span>
+                                                    </div>
+                                                    <div class="col">
+                                                        <strong>Gender: </strong>
+                                                        <span>Male</span>
+                                                    </div>
+                                                </div>
+                                                <div class="row mb-3">
+                                                    <div class="col">
+                                                        <strong>Country: </strong>
+                                                        <span>Nigeria</span>
+                                                    </div>
+                                                    <div class="col">
+                                                        <strong>Address: </strong>
+                                                        <span>45 unknown street</span>
+                                                    </div>
+                                                </div>
+
+                                                <div class="row mb-3">
+                                                    <div class="col">
+                                                        <strong>Phone Number: </strong>
+                                                        <span>07037461002</span>
+                                                    </div>
+                                                    <div class="col">
+                                                        <strong>Date of Birth: 1997-12-02 </strong>
+                                                        <span>Male</span>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <strong>State: </strong>
+                                                        <span> Anambra</span>
+                                                    </div>
+                                                    <div class="col">
+                                                        <strong>City: </strong>
+                                                        <span>Onitsha</span>
+                                                    </div>
+                                                </div>
+
+                                                <hr class="my-3" />
+                                                <h4>KYC Details</h4>
+                                                <div class="row my-3">
+                                                    <div class="col">
+                                                        <strong>Id Type: </strong>
+                                                        <span> Identity Card</span>
+                                                    </div>
+                                                    <div class="col">
+                                                        <strong>Id Number: </strong>
+                                                        <span>123456789</span>
+                                                    </div>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <strong>BVN: </strong>
+                                                    <span>123456789012</span>
+                                                </div>
+                                                <div class="row mb-3">
+                                                    <div class="col">
+                                                        <div class="card">
+                                                            <div class="card-body">
+                                                                <div class="profile-blog">
+                                                                    <h5 class="text-primary d-inline">ID Front
+                                                                    </h5>
+                                                                    <img src="images/profile/1.jpg" alt=""
+                                                                        class="img-fluid mt-4 mb-4 w-100 rounded">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="card">
+                                                            <div class="card-body">
+                                                                <div class="profile-blog">
+                                                                    <h5 class="text-primary d-inline">ID Back
+                                                                    </h5>
+                                                                    <img src="images/profile/1.jpg" alt=""
+                                                                        class="img-fluid mt-4 mb-4 w-100 rounded">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <span class="me-3">Cooperate level(current):</span>
+                                                    <strong class="text-info">brown chip</strong>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="tab-pane fade" id="contact1">
                                 <div class="pt-4">
-                                    <h4>This is contact title</h4>
-                                    <p>Far far away, behind the word mountains, far from the countries Vokalia and
-                                        Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.
-                                    </p>
-                                    <p>Far far away, behind the word mountains, far from the countries Vokalia and
-                                        Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.
-                                    </p>
+                                    <div class="card w-75">
+                                        <!-- <div class="card-body w-75">
+                                            <div class="card-use-box" style="text-align: left;">
+                                                <div class="card-header border-0">
+                                                    <h5 class="mb-3">Business verification</h5>
+                                                    <div><Strong>Unverified</Strong></div>
+                                                </div>
+                                                <div class="mb-3 col">
+                                                    <label for="exampleInputEmail1" class="form-label">Company
+                                                        Name</label>
+                                                    <input type="text" class="form-control"
+                                                        id="exampleInputEmail1" aria-describedby="emailHelp">
+
+                                                </div>
+
+                                                <div class="mb-3 row ">
+                                                    <div class="mb-3 col">
+                                                        <label for="selectId" class="form-label">Country</label>
+                                                        <select id="selectId"
+                                                            class="default-select form-control wide form-control-sm ">
+                                                            <option value="1">Driver License</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="mb-3 col">
+                                                        <label for="selectId" class="form-label">State</label>
+                                                        <select id="selectId"
+                                                            class="default-select form-control wide form-control-sm ">
+                                                            <option value="1">Driver License</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="mb-3 row ">
+                                                    <div class="mb-3 col">
+                                                        <label for="exampleInputEmail1" class="form-label">RC
+                                                            Number</label>
+                                                        <input type="text" class="form-control"
+                                                            id="exampleInputEmail1"
+                                                            aria-describedby="emailHelp">
+
+                                                    </div>
+                                                    <div class="mb-3 col">
+                                                        <label for="exampleInputEmail1"
+                                                            class="form-label">Address</label>
+                                                        <input type="text" class="form-control"
+                                                            id="exampleInputEmail1"
+                                                            aria-describedby="emailHelp">
+
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-9 col-xl-10 col-xxl-9">
+                                                    <div class="email-right-box ms-0 ">
+                                                        <div class="compose-wrapper mt-3 h-auto mb-5"
+                                                            id="compose-content">
+                                                            <div class="compose-content">
+                                                                <h5 class="my-3"><i
+                                                                        class="fa fa-paperclip me-2"></i>
+                                                                    Attachment
+                                                                </h5>
+
+                                                                <div class="row mb-3">
+                                                                    <div class="col">
+                                                                        <h5><b>CAC</b></h5>
+                                                                        <div action="#" class="dropzone"
+                                                                            style="border: 0.05rem solid;">
+                                                                            <div class="fallback">
+                                                                                <input name="file" type="file">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col">
+                                                                        <h5><b>Financial Statement</b></h5>
+                                                                        <div action="#" class="dropzone"
+                                                                            style="border: 0.05rem solid;">
+                                                                            <div class="fallback">
+                                                                                <input name="file" type="file">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+
+                                                                    <div class="col">
+                                                                        <h5><b>MOU</b></h5>
+                                                                        <div action="#" class="dropzone"
+                                                                            style="border: 0.05rem solid;">
+                                                                            <div class="fallback">
+                                                                                <input name="file" type="file">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <button type="btn"
+                                                    class="btn btn-green w-25 m-auto d-block">Save</button>
+                                            </div>
+
+                                        </div> -->
+                                        <div class="card-body w-75">
+                                            <div class="card-use-box" style="text-align: left;">
+                                                <div class="card-header border-0">
+                                                    <h5 class="mb-3">Preview KYB</h5>
+                                                    <div><Strong>Unverified</Strong></div>
+                                                </div>
+
+                                                <div class="row mb-3">
+                                                    <div class="col">
+                                                        <strong>Company Name: </strong>
+                                                        <span>Emmanuel</span>
+                                                    </div>
+                                                    <div class="col">
+                                                        <strong>RC Number </strong>
+                                                        <span>192929929</span>
+                                                    </div>
+                                                </div>
+                                                <div class="row mb-3">
+                                                    <div class="col">
+                                                        <strong>Country: </strong>
+                                                        <span>Nigeria</span>
+                                                    </div>
+                                                    <div class="col">
+                                                        <strong>State: </strong>
+                                                        <span> Anambra</span>
+                                                    </div>
+                                                </div>
+
+                                                
+                                                <div class="row">
+                                                    
+                                                    <div class="col">
+                                                        <strong>Address: </strong>
+                                                        <span>45 unknown street</span>
+                                                    </div>
+                                                </div>
+
+                                                <hr class="my-3" />
+                                                <h4>KYB Details</h4>
+                                          
+                                                <div class="row mb-3">
+                                                    <div class="col">
+                                                        <div class="card">
+                                                            <div class="card-body">
+                                                                <div class="profile-blog">
+                                                                    <h5 class="text-primary d-inline">CAC
+                                                                    </h5>
+                                                                    <img src="images/profile/1.jpg" alt=""
+                                                                        class="img-fluid mt-4 mb-4 w-100 rounded">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="card">
+                                                            <div class="card-body">
+                                                                <div class="profile-blog">
+                                                                    <h5 class="text-primary d-inline">MOU
+                                                                    </h5>
+                                                                    <img src="images/profile/1.jpg" alt=""
+                                                                        class="img-fluid mt-4 mb-4 w-100 rounded">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                                <div class="w-50">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <div class="profile-blog">
+                                                                <h5 class="text-primary d-inline">Financial Statement
+                                                                </h5>
+                                                                <img src="images/profile/1.jpg" alt=""
+                                                                    class="img-fluid mt-4 mb-4 w-100 rounded">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <span class="me-3">Cooperate level(current):</span>
+                                                    <strong class="text-info">brown chip</strong>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="tab-pane fade" id="message1">
-                                <div class="pt-4">
-                                    <h4>This is message title</h4>
-                                    <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu
-                                        stumptown aliqua, retro synth master cleanse. Mustache cliche tempor.
-                                    </p>
-                                    <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu
-                                        stumptown aliqua, retro synth master cleanse. Mustache cliche tempor.
-                                    </p>
-                                </div>
-                            </div>
+
                         </div>
                     </div>
-
+                   
 
                 </div>
             </div>
-            <!--**********************************
-            Content body end
-        ***********************************-->
-
-
-            <!--**********************************
-            Footer start
-        ***********************************-->
-            <div class="footer out-footer">
-                <div class="copyright">
-                    <p>Copyright © Developed by <a href="https://dexignzone.com/" target="_blank">DexignZone</a> 2023
-                    </p>
-                </div>
-            </div>
-            <!--**********************************
-            Footer end
-        ***********************************-->
-
-            <!--**********************************
-           Support ticket button start
-        ***********************************-->
-
-            <!--**********************************
-           Support ticket button end
-        ***********************************-->
-
-
-
-        </div>
-        <!--**********************************
+                <!--**********************************
         Main wrapper end
     ***********************************-->
 
-        <!--**********************************
+                <!--**********************************
         Scripts
     ***********************************-->
-        <!-- Required vendors -->
-        <script src="vendor/global/global.min.js"></script>
-        <script src="vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
-        <script src="js/custom.js"></script>
-        <script src="js/deznav-init.js"></script>
-        <script src="js/demo.js"></script>
-        <script src="js/styleSwitcher.js"></script>
+                <!-- Required vendors -->
+                <script src="vendor/global/global.min.js"></script>
+                <script src="vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+                <script src="js/custom.js"></script>
+                <script src="js/deznav-init.js"></script>
+                <script src="js/demo.js"></script>
+                <script src="js/styleSwitcher.js"></script>
+                <script src="vendor/jquery-nice-select/js/jquery.nice-select.min.js"></script>
+                <script src="vendor/dropzone/dist/dropzone.js"></script>
     </body>
-
-    <!-- Mirrored from yashadmin.dexignzone.com/xhtml/empty-page.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 04 Jan 2024 00:08:16 GMT -->
 
 </html>
