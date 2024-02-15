@@ -6,6 +6,14 @@
 .active {
   color:#495057 !important;
 }
+.btn-primary-subtle {
+  background-color: #121330;
+  color: white;
+}
+/* .dark_blue {
+  background-color: rgb(18 19 48);
+  color: white;
+} */
 .text {
   color: #009440;
 }
@@ -146,4 +154,8 @@ select::after {
   background-color: rgb(35 43 57);
   border: none;
   color: white;
+}
+
+.cursor_pointer {
+  cursor: default;
 }
