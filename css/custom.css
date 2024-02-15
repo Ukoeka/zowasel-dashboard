@@ -131,7 +131,6 @@ select::after {
 .tabcontent {
   display: none;
   padding: 20px;
-  /* position: absolute; */
   top: 50px;
 }
 
