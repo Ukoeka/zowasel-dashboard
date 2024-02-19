@@ -53883,4 +53883,87 @@ html[dir="rtl"]
   display: flex;
   justify-content: flex-end;
 }
+
+
+
+
+#dropBox {
+		min-width: 400px;
+		max-width: 75%;
+		min-height: 300px;
+		border: 2px dashed #299e4a;
+		text-align: center;
+		background: white;
+		padding: 3em;
+		margin: auto;
+	}
+	#dropBox.hover {
+	  border-color: darkslateblue;
+	  background: aliceblue;
+	}
+	.button {
+		display: inline-block;
+		padding: .5em 1em;
+		background: #299e4a;
+		cursor: pointer;
+		border-radius: 5px;
+		border: 1px solid #299e4a;
+		color: #fff;
+		transition: .4s;
+	}
+	.button:hover {
+		background: green;
+	}
+	#imgUpload {
+		display: none;
+	}
+	#gallery {
+		text-align: center;
+		margin-top: 1.5em;
+	}
+	#gallery div {
+		display: inline-block;
+		margin: .5em 1em;
+	}
+	#gallery img {
+		max-height: 150px;
+	}
+	#gallery .fName,
+	#gallery .fSize {
+		display: block;
+	}
+	#gallery .fName {
+		color: brown;
+	}
+	#gallery .fSize {
+		font-size: .8em;
+	}
+	#gallery .fType {
+		font-size: .7em;
+	}
+  .each-crop{
+    background: #F5F5F5;
+
+  }
+  .green-card{
+    background:rgba(163, 207, 115, 0.13);
+    border: 1px solid rgba(0, 0, 0, 0.17);
+    padding: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+    justify-content: space-between;
+    text-align: center;
+  }
+  .give-gap{
+    gap: 20px;
+  }
+  .red-col{
+    color: rgba(117, 0, 0, 1);
+  }
+  .green-col{
+    color: rgba(0, 86, 9, 1);
+  }
+  .btn-def{
+    border: 1px solid black;
+  }
 /* styled by Koka */
